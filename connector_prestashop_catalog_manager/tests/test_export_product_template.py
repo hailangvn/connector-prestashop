@@ -62,7 +62,7 @@ class TestExportProduct(CatalogManagerTransactionCase):
 
     def _bind_template(self):
         return self.create_binding_no_export(
-            'prestashop.product.template', self.template.id, 7, **{
+            'prestashop.product.template', self.template.id, 8, **{
                 'default_shop_id': self.shop.id,
                 }).with_context(connector_no_export=False)
 
@@ -136,7 +136,7 @@ class TestExportProduct(CatalogManagerTransactionCase):
         wizard.sync_products()
         # check import done
         self.instance_delay_record.import_record.assert_called_once_with(
-            self.backend_record, 7
+            self.backend_record, 8
         )
 
     @assert_no_job_delayed
