@@ -307,6 +307,11 @@ class ProductTemplateExportMapper(Component):
         return {}
 
     @mapping
+    def date_add(self, record):
+        # When export a record the date_add in PS is null.
+        return {'date_add': record.create_date}
+
+    @mapping
     def default_image(self, record):
         default_image = record.image_ids.filtered('front_image')[:1]
         if default_image:
