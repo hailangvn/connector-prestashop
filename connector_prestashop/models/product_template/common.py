@@ -167,6 +167,8 @@ class PrestashopProductTemplate(models.Model):
         ('2', 'Default prestashop')],
         string='If stock shortage'
     )
+    low_stock_threshold = fields.Integer(string='Low Stock Threshold')
+    low_stock_alert = fields.Boolean(string='Low Stock Alert')
 
     @job(default_channel='root.prestashop')
     def import_products(self, backend, since_date=None, **kwargs):
