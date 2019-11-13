@@ -34,7 +34,7 @@ class IrTranslation(models.Model):
                     'catalog_manager_force_translation', False):
                 continue
             res = super(IrTranslation, self).write(vals)
-    
+
             self.write_on_source_model()
         return res
 
