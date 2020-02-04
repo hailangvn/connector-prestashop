@@ -327,6 +327,17 @@ class TemplateMapper(Component):
         if record['type']['value'] and record['type']['value'] == 'virtual':
             return {"type": 'service'}
         return {"type": 'product'}
+
+    @mapping
+    def product_brand_id(self, record):
+        binder = self.binder_for('prestashop.product.brand')
+        manufacturer = binder.to_internal(
+            record['id_manufacturer'],
+            unwrap=True,
+        )
+
+        return {'product_brand_id': manufacturer.id}
+
 # TODO FIXME
 #    @mapping
 #    def extras_features(self, record):

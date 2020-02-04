@@ -177,6 +177,9 @@ class PrestashopProductTemplate(models.Model):
             filters = {'date': '1', 'filter[date_upd]': '>[%s]' % (since_date)}
         now_fmt = fields.Datetime.now()
 
+        self.env['prestashop.product.brand'].import_batch(
+            backend, filters=filters, priority=5)
+
         self.env['prestashop.product.category'].import_batch(
             backend, filters=filters, priority=10)
 

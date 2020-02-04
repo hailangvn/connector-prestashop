@@ -11,6 +11,7 @@ from . import payment
 from . import stock_warehouse
 from . import prestashop_backend
 from . import prestashop_shop_group
+from . import product_brand
 from . import product_category
 from . import product_image
 from . import product_pricelist
