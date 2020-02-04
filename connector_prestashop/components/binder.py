@@ -29,6 +29,7 @@ class PrestashopModelBinder(Component):
         "prestashop.res.currency",
         "prestashop.account.tax",
         "prestashop.account.tax.group",
+        "prestashop.product.brand",
         "prestashop.product.category",
         "prestashop.product.image",
         "prestashop.product.template",

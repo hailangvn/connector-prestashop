@@ -389,6 +389,16 @@ class TemplateMapper(Component):
             visibility = "none"
         return {"visibility": visibility}
 
+    @mapping
+    def product_brand_id(self, record):
+        binder = self.binder_for("prestashop.product.brand")
+        manufacturer = binder.to_internal(
+            record["id_manufacturer"],
+            unwrap=True,
+        )
+
+        return {"product_brand_id": manufacturer.id}
+
 
 class FeaturesProductImportMapper(Component):
     # To extend in connector_prestashop_feature module. In this way we

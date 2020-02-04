@@ -17,6 +17,7 @@
         "connector_ecommerce",  # oca/connector-ecommerce
         "purchase",
         "onchange_helper",
+        "product_brand",  # oca/product-attribute
     ],
     "external_dependencies": {
         "python": [
