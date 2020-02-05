@@ -67,5 +67,5 @@ class VersionKey1612(Component):
         'product_features': 'product_feature',
         'tag': 'tag',
         'messages': 'customer_messages',
-        'manufacturers': 'manufacturers',
+        'manufacturer': 'manufacturers',
     }

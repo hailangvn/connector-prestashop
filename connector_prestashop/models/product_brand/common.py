@@ -28,6 +28,14 @@ class PrestashopProductBrand(models.Model):
         string='Product Brand',
         oldname='openerp_id',
     )
+    date_add = fields.Datetime(
+        string='Created At (on PrestaShop)',
+        readonly=True
+    )
+    date_upd = fields.Datetime(
+        string='Updated At (on PrestaShop)',
+        readonly=True
+    )
 
 
 class ProductBrandAdapter(Component):
@@ -37,5 +45,5 @@ class ProductBrandAdapter(Component):
 
     _model_name = 'prestashop.product.brand'
     _prestashop_model = 'manufacturers'
-    _export_node_name = 'brand'
-    _export_node_name_res = 'brand'
+    _export_node_name = 'manufacturers'
+    _export_node_name_res = 'manufacturer'
