@@ -41,7 +41,7 @@ class VersionKey1609(Component):
         "image": "images",
         "combinations": "combinations",
         "tag": "tags",
-        "manufacturers": "manufacturers",
+        "manufacturer": "manufacturers",
     }
 
 
@@ -68,7 +68,7 @@ class VersionKey1612(Component):
         "product_features": "product_feature",
         "tag": "tag",
         "messages": "customer_messages",
-        "manufacturers": "manufacturers",
+        "manufacturer": "manufacturers",
     }
 
 
@@ -93,5 +93,5 @@ class VersionKey1616(Component):
         "product_features": "product_feature",
         "tag": "tag",
         "messages": "customer_messages",
-        "manufacturers": "manufacturers",
+        "manufacturer": "manufacturers",
     }
