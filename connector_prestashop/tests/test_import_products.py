@@ -16,6 +16,11 @@ ExpectedProductCategory = namedtuple(
     'name odoo_id__display_name'
 )
 
+ExpectedProductBrand = namedtuple(
+    'ExpectedProductBrand',
+    'name'
+)
+
 ExpectedTemplate = namedtuple(
     'ExpectedProduct',
     'name categ_id categ_ids list_price'
@@ -77,20 +82,26 @@ class TestImportProduct(PrestashopTransactionCase):
                 'limit': ['0,1000'],
                 'filter[date_upd]': ['>[2016-09-01 00:00:00]'],
             }
-            self.assertEqual(2, len(cassette.requests))
+            self.assertEqual(3, len(cassette.requests))
 
             request = cassette.requests[0]
+            self.assertEqual('GET', request.method)
+            self.assertEqual('/api/manufacturers',
+                             self.parse_path(request.uri))
+            self.assertDictEqual(expected_query, self.parse_qs(request.uri))
+
+            request = cassette.requests[1]
             self.assertEqual('GET', request.method)
             self.assertEqual('/api/categories', self.parse_path(request.uri))
             self.assertDictEqual(expected_query, self.parse_qs(request.uri))
 
-            request = cassette.requests[1]
+            request = cassette.requests[2]
             self.assertEqual('GET', request.method)
             self.assertEqual('/api/products', self.parse_path(request.uri))
             self.assertDictEqual(expected_query, self.parse_qs(request.uri))
 
             self.assertEqual(
-                18, self.instance_delay_record.import_record.call_count)
+                43, self.instance_delay_record.import_record.call_count)
 
     @assert_no_job_delayed
     def test_import_product_record_category(self):
@@ -108,6 +119,25 @@ class TestImportProduct(PrestashopTransactionCase):
             ExpectedProductCategory(
                 name='T-shirts',
                 odoo_id__display_name='Root / Home / Women / Tops / T-shirts',
+            )]
+
+        self.assert_records(expected, binding)
+
+    @assert_no_job_delayed
+    def test_import_product_record_brand(self):
+        """ Import a product brand """
+        with recorder.use_cassette('test_import_product_brand_record_1'):
+            self.env['prestashop.product.brand'].import_record(
+                self.backend_record, 1)
+
+        domain = [('prestashop_id', '=', 1),
+                  ('backend_id', '=', self.backend_record.id)]
+        binding = self.env['prestashop.product.brand'].search(domain)
+        binding.ensure_one()
+
+        expected = [
+            ExpectedProductBrand(
+                name='Fashion Manufacturer',
             )]
 
         self.assert_records(expected, binding)
