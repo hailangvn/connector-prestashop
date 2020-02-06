@@ -413,19 +413,6 @@ class FeaturesProductImportMapper(Component):
         return {}
 
 
-class ManufacturerProductImportMapper(Component):
-    # To extend in connector_prestashop_manufacturer module. In this way we
-    # dependencies on other modules like product_manufacturer
-    _name = "prestashop.manufacturer.product.template.mapper"
-    _inherit = "prestashop.product.template.mapper"
-    _apply_on = "prestashop.product.template"
-    _usage = "manufacturer.product.import.mapper"
-
-    @mapping
-    def extras_manufacturer(self, record):
-        return {}
-
-
 class ImportInventory(models.TransientModel):
     # In actual connector version is mandatory use a model
     _name = "_import_stock_available"
@@ -726,7 +713,7 @@ class ProductTemplateImporter(Component):
     def _import_dependencies(self):
         self._import_default_category()
         self._import_categories()
-        self._import_manufacturer()
+        self._import_product_brand()
 
         record = self.prestashop_record
         ps_key = self.backend_record.get_version_ps_key("product_option_value")
@@ -755,9 +742,9 @@ class ProductTemplateImporter(Component):
     #            presta_option_values.append(option_value)
     #        self.template_attribute_lines(presta_option_values)
 
-    def _import_manufacturer(self):
-        self.component(usage="manufacturer.product.importer").import_manufacturer(
-            self.prestashop_record.get("id_manufacturer")
+    def _import_product_brand(self):
+        self._import_dependency(
+            self.prestashop_record.get("id_manufacturer"), "prestashop.product.brand"
         )
 
     def get_template_model_id(self):
@@ -789,18 +776,6 @@ class ProductTemplateImporter(Component):
             categories = [categories]
         for category in categories:
             self._import_dependency(category["id"], "prestashop.product.category")
-
-
-class ManufacturerProductDependency(Component):
-    # To extend in connector_prestashop_feature module. In this way we
-    # dependencies on other modules like product_manufacturer
-    _name = "prestashop.product.template.manufacturer.importer"
-    _inherit = "prestashop.product.template.importer"
-    _apply_on = "prestashop.product.template"
-    _usage = "manufacturer.product.importer"
-
-    def import_manufacturer(self, manufacturer_id):
-        return
 
 
 class ProductTemplateBatchImporter(Component):
