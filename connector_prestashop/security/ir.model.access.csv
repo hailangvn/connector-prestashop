@@ -35,6 +35,8 @@ access_prestashop_product_combination_option_user,User access on prestashop.prod
 access_prestashop_product_combination_option_full,Full access on prestashop.product.combination.option,model_prestashop_product_combination_option,connector.group_connector_manager,1,1,1,1
 access_prestashop_product_combination_option_value_user,User access on prestashop.product.combination.option.value,model_prestashop_product_combination_option_value,connector.group_connector_manager,1,1,1,1
 access_prestashop_product_combination_option_value_full,Full access on prestashop.product.combination.option.value,model_prestashop_product_combination_option_value,base.group_user,1,0,0,0
+access_prestashop_product_brand_user,User access on prestashop.product.brand,model_prestashop_product_brand,base.group_user,1,0,0,0
+access_prestashop_product_brand_full,Full access on prestashop.product.brand,model_prestashop_product_brand,connector.group_connector_manager,1,1,1,1
 access_prestashop_refund,Full access on prestashop.refund,model_prestashop_refund,connector.group_connector_manager,1,1,1,1
 access_prestashop_supplier_user,User access on prestashop.supplier,model_prestashop_supplier,base.group_user,1,0,0,0
 access_prestashop_supplier,Full access on prestashop.supplier,model_prestashop_supplier,connector.group_connector_manager,1,1,1,1
