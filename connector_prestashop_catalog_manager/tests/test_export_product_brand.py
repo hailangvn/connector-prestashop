@@ -8,7 +8,6 @@ from openerp.addons.connector_prestashop.tests.common import (
     assert_no_job_delayed,
     recorder
 )
-from ..models.product_template.exporter import get_slug
 
 
 class TestExportProductBrand(CatalogManagerTransactionCase):
@@ -50,8 +49,6 @@ class TestExportProductBrand(CatalogManagerTransactionCase):
 
     @assert_no_job_delayed
     def test_export_product_brand_onwrite(self):
-        # bind brand
-        binding = self._bind_brand()
         # check no export delayed
         self.assertEqual(
             0, self.instance_delay_record.export_record.call_count)
