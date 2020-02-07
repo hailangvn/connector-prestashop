@@ -7,7 +7,7 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.11.1]
     method: GET
-    uri: http://www.prestashop_catalogmanager10.com/api/manufacturers?date=1&limit=0%2C1000&filter%5Bdate_upd%5D=%3E%5B2016-09-01+00%3A00%3A00%5D
+    uri: http://localhost:8080/api/manufacturers?date=1&limit=0%2C1000&filter%5Bdate_upd%5D=%3E%5B2016-09-01+00%3A00%3A00%5D
   response:
     body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
 
@@ -15,25 +15,25 @@ interactions:
 
         <manufacturers>
 
-        <manufacturer id="1" xlink:href="http://www.prestashop_catalogmanager10.com/api/manufacturers/1"/>
+        <manufacturer id="1" xlink:href="http://localhost:8080/api/manufacturers/1"/>
 
-        <manufacturer id="3" xlink:href="http://www.prestashop_catalogmanager10.com/api/manufacturers/3"/>
+        <manufacturer id="3" xlink:href="http://localhost:8080/api/manufacturers/3"/>
 
-        <manufacturer id="4" xlink:href="http://www.prestashop_catalogmanager10.com/api/manufacturers/4"/>
+        <manufacturer id="4" xlink:href="http://localhost:8080/api/manufacturers/4"/>
 
-        <manufacturer id="5" xlink:href="http://www.prestashop_catalogmanager10.com/api/manufacturers/5"/>
+        <manufacturer id="5" xlink:href="http://localhost:8080/api/manufacturers/5"/>
 
-        <manufacturer id="6" xlink:href="http://www.prestashop_catalogmanager10.com/api/manufacturers/6"/>
+        <manufacturer id="6" xlink:href="http://localhost:8080/api/manufacturers/6"/>
 
-        <manufacturer id="7" xlink:href="http://www.prestashop_catalogmanager10.com/api/manufacturers/7"/>
+        <manufacturer id="7" xlink:href="http://localhost:8080/api/manufacturers/7"/>
 
-        <manufacturer id="8" xlink:href="http://www.prestashop_catalogmanager10.com/api/manufacturers/8"/>
+        <manufacturer id="8" xlink:href="http://localhost:8080/api/manufacturers/8"/>
 
-        <manufacturer id="9" xlink:href="http://www.prestashop_catalogmanager10.com/api/manufacturers/9"/>
+        <manufacturer id="9" xlink:href="http://localhost:8080/api/manufacturers/9"/>
 
-        <manufacturer id="10" xlink:href="http://www.prestashop_catalogmanager10.com/api/manufacturers/10"/>
+        <manufacturer id="10" xlink:href="http://localhost:8080/api/manufacturers/10"/>
 
-        <manufacturer id="11" xlink:href="http://www.prestashop_catalogmanager10.com/api/manufacturers/11"/>
+        <manufacturer id="11" xlink:href="http://localhost:8080/api/manufacturers/11"/>
 
         </manufacturers>
 
@@ -51,7 +51,7 @@ interactions:
       psws-version: [1.6.1.22]
       server: [nginx/1.10.3 (Ubuntu)]
       set-cookie: ['PrestaShop-6afe1be0fe41e536d378c33ccb8576a7=b288429d112675f3e52b0ed3bff954041e47a0f270af16f8d9792f427290a9a3%3AERwbwgjnbPhegaRWNyAjEGuxQvErg4u07%2FPGCBywdCcLb%2B8nh3at%2BcB7mm470egLD3OXv9enDImEf1n4pgmMmrbhxWiyRo4pPLeMjn8m3so%3D;
-          expires=Wed, 26-Feb-2020 15:51:33 GMT; Max-Age=1728000; path=/; domain=www.prestashop_catalogmanager10.com;
+          expires=Wed, 26-Feb-2020 15:51:33 GMT; Max-Age=1728000; path=/; domain=localhost:8080;
           HttpOnly']
       transfer-encoding: [chunked]
       vary: [Accept-Encoding]
@@ -65,7 +65,7 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.11.1]
     method: GET
-    uri: http://www.prestashop_catalogmanager10.com/api/categories?date=1&limit=0%2C1000&filter%5Bdate_upd%5D=%3E%5B2016-09-01+00%3A00%3A00%5D
+    uri: http://localhost:8080/api/categories?date=1&limit=0%2C1000&filter%5Bdate_upd%5D=%3E%5B2016-09-01+00%3A00%3A00%5D
   response:
     body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
 
@@ -73,35 +73,35 @@ interactions:
 
         <categories>
 
-        <category id="1" xlink:href="http://www.prestashop_catalogmanager10.com/api/categories/1"/>
+        <category id="1" xlink:href="http://localhost:8080/api/categories/1"/>
 
-        <category id="2" xlink:href="http://www.prestashop_catalogmanager10.com/api/categories/2"/>
+        <category id="2" xlink:href="http://localhost:8080/api/categories/2"/>
 
-        <category id="3" xlink:href="http://www.prestashop_catalogmanager10.com/api/categories/3"/>
+        <category id="3" xlink:href="http://localhost:8080/api/categories/3"/>
 
-        <category id="4" xlink:href="http://www.prestashop_catalogmanager10.com/api/categories/4"/>
+        <category id="4" xlink:href="http://localhost:8080/api/categories/4"/>
 
-        <category id="5" xlink:href="http://www.prestashop_catalogmanager10.com/api/categories/5"/>
+        <category id="5" xlink:href="http://localhost:8080/api/categories/5"/>
 
-        <category id="6" xlink:href="http://www.prestashop_catalogmanager10.com/api/categories/6"/>
+        <category id="6" xlink:href="http://localhost:8080/api/categories/6"/>
 
-        <category id="7" xlink:href="http://www.prestashop_catalogmanager10.com/api/categories/7"/>
+        <category id="7" xlink:href="http://localhost:8080/api/categories/7"/>
 
-        <category id="8" xlink:href="http://www.prestashop_catalogmanager10.com/api/categories/8"/>
+        <category id="8" xlink:href="http://localhost:8080/api/categories/8"/>
 
-        <category id="9" xlink:href="http://www.prestashop_catalogmanager10.com/api/categories/9"/>
+        <category id="9" xlink:href="http://localhost:8080/api/categories/9"/>
 
-        <category id="10" xlink:href="http://www.prestashop_catalogmanager10.com/api/categories/10"/>
+        <category id="10" xlink:href="http://localhost:8080/api/categories/10"/>
 
-        <category id="11" xlink:href="http://www.prestashop_catalogmanager10.com/api/categories/11"/>
+        <category id="11" xlink:href="http://localhost:8080/api/categories/11"/>
 
-        <category id="12" xlink:href="http://www.prestashop_catalogmanager10.com/api/categories/12"/>
+        <category id="12" xlink:href="http://localhost:8080/api/categories/12"/>
 
-        <category id="13" xlink:href="http://www.prestashop_catalogmanager10.com/api/categories/13"/>
+        <category id="13" xlink:href="http://localhost:8080/api/categories/13"/>
 
-        <category id="14" xlink:href="http://www.prestashop_catalogmanager10.com/api/categories/14"/>
+        <category id="14" xlink:href="http://localhost:8080/api/categories/14"/>
 
-        <category id="15" xlink:href="http://www.prestashop_catalogmanager10.com/api/categories/15"/>
+        <category id="15" xlink:href="http://localhost:8080/api/categories/15"/>
 
         </categories>
 
@@ -119,7 +119,7 @@ interactions:
       psws-version: [1.6.1.22]
       server: [nginx/1.10.3 (Ubuntu)]
       set-cookie: ['PrestaShop-6afe1be0fe41e536d378c33ccb8576a7=b288429d112675f3e52b0ed3bff954041e47a0f270af16f8d9792f427290a9a3%3AERwbwgjnbPhegaRWNyAjEGuxQvErg4u07%2FPGCBywdCcLb%2B8nh3at%2BcB7mm470egLD3OXv9enDImEf1n4pgmMmrbhxWiyRo4pPLeMjn8m3so%3D;
-          expires=Wed, 26-Feb-2020 15:51:33 GMT; Max-Age=1728000; path=/; domain=www.prestashop_catalogmanager10.com;
+          expires=Wed, 26-Feb-2020 15:51:33 GMT; Max-Age=1728000; path=/; domain=localhost:8080;
           HttpOnly']
       transfer-encoding: [chunked]
       vary: [Accept-Encoding]
@@ -133,7 +133,7 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.11.1]
     method: GET
-    uri: http://www.prestashop_catalogmanager10.com/api/products?date=1&limit=0%2C1000&filter%5Bdate_upd%5D=%3E%5B2016-09-01+00%3A00%3A00%5D
+    uri: http://localhost:8080/api/products?date=1&limit=0%2C1000&filter%5Bdate_upd%5D=%3E%5B2016-09-01+00%3A00%3A00%5D
   response:
     body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
 
@@ -141,41 +141,41 @@ interactions:
 
         <products>
 
-        <product id="8" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/8"/>
+        <product id="8" xlink:href="http://localhost:8080/api/products/8"/>
 
-        <product id="17" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/17"/>
+        <product id="17" xlink:href="http://localhost:8080/api/products/17"/>
 
-        <product id="10" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/10"/>
+        <product id="10" xlink:href="http://localhost:8080/api/products/10"/>
 
-        <product id="11" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/11"/>
+        <product id="11" xlink:href="http://localhost:8080/api/products/11"/>
 
-        <product id="12" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/12"/>
+        <product id="12" xlink:href="http://localhost:8080/api/products/12"/>
 
-        <product id="13" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/13"/>
+        <product id="13" xlink:href="http://localhost:8080/api/products/13"/>
 
-        <product id="14" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/14"/>
+        <product id="14" xlink:href="http://localhost:8080/api/products/14"/>
 
-        <product id="15" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/15"/>
+        <product id="15" xlink:href="http://localhost:8080/api/products/15"/>
 
-        <product id="18" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/18"/>
+        <product id="18" xlink:href="http://localhost:8080/api/products/18"/>
 
-        <product id="1" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/1"/>
+        <product id="1" xlink:href="http://localhost:8080/api/products/1"/>
 
-        <product id="2" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/2"/>
+        <product id="2" xlink:href="http://localhost:8080/api/products/2"/>
 
-        <product id="3" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/3"/>
+        <product id="3" xlink:href="http://localhost:8080/api/products/3"/>
 
-        <product id="4" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/4"/>
+        <product id="4" xlink:href="http://localhost:8080/api/products/4"/>
 
-        <product id="5" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/5"/>
+        <product id="5" xlink:href="http://localhost:8080/api/products/5"/>
 
-        <product id="6" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/6"/>
+        <product id="6" xlink:href="http://localhost:8080/api/products/6"/>
 
-        <product id="7" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/7"/>
+        <product id="7" xlink:href="http://localhost:8080/api/products/7"/>
 
-        <product id="9" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/9"/>
+        <product id="9" xlink:href="http://localhost:8080/api/products/9"/>
 
-        <product id="16" xlink:href="http://www.prestashop_catalogmanager10.com/api/products/16"/>
+        <product id="16" xlink:href="http://localhost:8080/api/products/16"/>
 
         </products>
 
@@ -193,7 +193,7 @@ interactions:
       psws-version: [1.6.1.22]
       server: [nginx/1.10.3 (Ubuntu)]
       set-cookie: ['PrestaShop-6afe1be0fe41e536d378c33ccb8576a7=b288429d112675f3e52b0ed3bff954041e47a0f270af16f8d9792f427290a9a3%3AERwbwgjnbPhegaRWNyAjEGuxQvErg4u07%2FPGCBywdCcLb%2B8nh3at%2BcB7mm470egLD3OXv9enDImEf1n4pgmMmrbhxWiyRo4pPLeMjn8m3so%3D;
-          expires=Wed, 26-Feb-2020 15:51:33 GMT; Max-Age=1728000; path=/; domain=www.prestashop_catalogmanager10.com;
+          expires=Wed, 26-Feb-2020 15:51:33 GMT; Max-Age=1728000; path=/; domain=localhost:8080;
           HttpOnly']
       transfer-encoding: [chunked]
       vary: [Accept-Encoding]
