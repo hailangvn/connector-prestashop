@@ -646,7 +646,7 @@ class ProductTemplateImporter(Component):
         self._import_product_brand()
 
     def _import_product_brand(self):
-        if self.prestashop_record.get('id_manufacturer'):
+        if int(self.prestashop_record.get('id_manufacturer')):
             self._import_dependency(
                 self.prestashop_record.get('id_manufacturer'),
                 'prestashop.product.brand')
