@@ -646,9 +646,10 @@ class ProductTemplateImporter(Component):
         self._import_product_brand()
 
     def _import_product_brand(self):
-        self._import_dependency(
-            self.prestashop_record.get('id_manufacturer'),
-            'prestashop.product.brand')
+        if self.prestashop_record.get('id_manufacturer'):
+            self._import_dependency(
+                self.prestashop_record.get('id_manufacturer'),
+                'prestashop.product.brand')
 
     def get_template_model_id(self):
         ir_model = self.env['ir.model'].search([
