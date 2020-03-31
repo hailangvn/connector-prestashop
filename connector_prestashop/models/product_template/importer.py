@@ -338,6 +338,13 @@ class TemplateMapper(Component):
 
         return {'product_brand_id': manufacturer.id}
 
+    @mapping
+    def visibility(self, record):
+        visibility = record.get('visibility')
+        if visibility not in ('both', 'catalog', 'search'):
+            visibility = 'none'
+        return {'visibility': visibility}
+
 
 class FeaturesProductImportMapper(Component):
     # To extend in connector_prestashop_feature module. In this way we
