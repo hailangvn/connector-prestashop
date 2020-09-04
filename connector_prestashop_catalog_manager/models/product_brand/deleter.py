@@ -11,12 +11,3 @@ class ProductBrandDeleter(Component):
     _apply_on = [
         'prestashop.product.brand',
     ]
-
-    def _run(self, **kwargs):
-        if self.prestashop_id:
-            resource = self.backend_adapter._prestashop_model +\
-                '/%s' % self.prestashop_id
-            res = self.backend_adapter.delete(resource, self.prestashop_id)
-            return res
-        else:
-            return _('Nothing to delete.')

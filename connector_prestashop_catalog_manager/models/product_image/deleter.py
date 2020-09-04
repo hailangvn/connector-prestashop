@@ -10,10 +10,3 @@ class ProductImageDeleter(Component):
     _inherit = 'prestashop.deleter'
     _apply_on = 'prestashop.product.image'
 
-    def _run(self, **kwargs):
-        if self.prestashop_id:
-            record = kwargs.get('record', None)
-            res = self.backend_adapter.delete(self.prestashop_id, record)
-            return res
-        else:
-            return _('Nothing to delete.')
