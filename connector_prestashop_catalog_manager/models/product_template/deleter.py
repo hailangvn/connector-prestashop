@@ -3,7 +3,6 @@
 #
 
 from odoo.addons.component.core import Component
-from odoo import _
 
 
 class ProductCombinationOptionDeleter(Component):
