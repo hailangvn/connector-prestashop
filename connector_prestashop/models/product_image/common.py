@@ -91,7 +91,7 @@ class ProductImageAdapter(Component):
             pass
         return api.add(url, files=[(
             'image',
-            attributes['filename'].encode('utf-8'),
+            attributes['filename'],
             base64.b64decode(attributes['content'])
         )])
 
