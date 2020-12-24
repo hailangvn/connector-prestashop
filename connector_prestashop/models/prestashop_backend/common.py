@@ -152,7 +152,6 @@ class PrestashopBackend(models.Model):
     tz = fields.Selection(
         _tz_get,
         "Timezone",
-        size=64,
         help="The timezone of the backend. Used to synchronize the sale order " "date.",
     )
     product_qty_field = fields.Selection(
