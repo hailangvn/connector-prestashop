@@ -17,6 +17,7 @@
         "base_multi_image",  # oca/server-tools
         "purchase",
         "product_brand",  # oca/product-attribute
+        "onchange_helper",
     ],
     "external_dependencies": {
         "python": [
