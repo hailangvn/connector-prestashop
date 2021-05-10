@@ -211,7 +211,7 @@ class ProductAttributeValue(models.Model):
 
 class PrestashopProductCombinationOptionValue(models.Model):
     _name = 'prestashop.product.combination.option.value'
-    _inherit = 'prestashop.binding'
+    _inherit = 'prestashop.binding.odoo'
     _inherits = {'product.attribute.value': 'odoo_id'}
 
     odoo_id = fields.Many2one(

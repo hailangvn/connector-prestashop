@@ -20,7 +20,7 @@ class ProductImage(models.Model):
 
 class PrestashopProductImage(models.Model):
     _name = 'prestashop.product.image'
-    _inherit = 'prestashop.binding'
+    _inherit = 'prestashop.binding.odoo'
     _inherits = {'base_multi_image.image': 'odoo_id'}
 
     odoo_id = fields.Many2one(

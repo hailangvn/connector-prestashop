@@ -17,7 +17,7 @@ class StockWarehouse(models.Model):
 
 class PrestashopShop(models.Model):
     _name = 'prestashop.shop'
-    _inherit = 'prestashop.binding'
+    _inherit = 'prestashop.binding.odoo'
     _description = 'PrestaShop Shop'
 
     @api.multi
