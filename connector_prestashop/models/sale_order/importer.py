@@ -335,7 +335,7 @@ class SaleOrderImporter(Component):
         :param environment: current environment (backend, session, ...)
         :type environment: :py:class:`connector.connector.ConnectorEnvironment`
         """
-        super(SaleOrderImporter, self).__init__(environment)
+        super().__init__(environment)
         self.line_template_errors = []
 
     def _import_dependencies(self):
@@ -406,13 +406,13 @@ class SaleOrderImporter(Component):
         binding.odoo_id.recompute()
 
     def _create(self, data):
-        binding = super(SaleOrderImporter, self)._create(data)
+        binding = super()._create(data)
         if binding.fiscal_position_id:
             binding.odoo_id._compute_tax_id()
         return binding
 
     def _after_import(self, binding):
-        super(SaleOrderImporter, self)._after_import(binding)
+        super()._after_import(binding)
         self._add_shipping_line(binding)
         self.warning_line_without_template(binding)
 

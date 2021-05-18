@@ -80,7 +80,7 @@ class ProductCombinationImporter(Component):
             attr_line._update_product_template_attribute_values()
 
     def _after_import(self, binding):
-        super(ProductCombinationImporter, self)._after_import(binding)
+        super()._after_import(binding)
         self.import_supplierinfo(binding)
 
     def set_variant_images(self, combinations):
@@ -138,7 +138,6 @@ class ProductCombinationImporter(Component):
             if "parent_presta_record" not in self.work._propagate_kwargs:
                 self.work._propagate_kwargs.append("parent_presta_record")
         return super()._import(binding, **kwargs)
-
 
 
 class ProductCombinationMapper(Component):
@@ -390,7 +389,7 @@ class ProductCombinationOptionImporter(Component):
             )
 
     def _after_import(self, binding):
-        super(ProductCombinationOptionImporter, self)._after_import(binding)
+        super()._after_import(binding)
         self._import_values(binding)
 
 

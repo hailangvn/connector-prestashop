@@ -111,7 +111,7 @@ class ResPartnerImporter(Component):
             self._import_dependency(group["id"], "prestashop.res.partner.category")
 
     def _after_import(self, binding):
-        super(ResPartnerImporter, self)._after_import(binding)
+        super()._after_import(binding)
         binder = self.binder_for()
         ps_id = binder.to_external(binding)
         self.env["prestashop.address"].with_delay(priority=10).import_batch(

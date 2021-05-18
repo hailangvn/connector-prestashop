@@ -75,7 +75,7 @@ class ProductImageImporter(Component):
         self.image_id = image_id
 
         try:
-            super(ProductImageImporter, self).run(image_id, **kwargs)
+            super().run(image_id, **kwargs)
         except PrestaShopWebServiceError:
             binder = self.binder_for("prestashop.product.template")
             template = binder.to_internal(template_id, unwrap=True)
