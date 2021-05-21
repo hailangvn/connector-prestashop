@@ -13,8 +13,8 @@
         "base_vat",  # for vat validation on partner address
         "product",
         "product_multi_category",  # oca/product-attribute
+        "product_multi_image",  # oca/product-attribute
         "connector_ecommerce",  # oca/connector-ecommerce
-        "base_multi_image",  # oca/server-tools
         "purchase",
         "product_brand",  # oca/product-attribute
         "onchange_helper",
