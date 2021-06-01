@@ -319,7 +319,11 @@ class PrestashopTransactionCase(SavepointComponentCase):
         )
 
     def _create_product_binding(
-        self, name=None, template_ps_id=None, variant_ps_id=None
+        self,
+        name=None,
+        template_ps_id=None,
+        variant_ps_id=None,
+        link_rewrite="link-rewrite",
     ):
         product = self.env["product.product"].create(
             {
@@ -333,6 +337,7 @@ class PrestashopTransactionCase(SavepointComponentCase):
             template.id,
             prestashop_id=template_ps_id,
             default_shop_id=self.shop.id,
+            link_rewrite=link_rewrite,
         )
         return self.create_binding_no_export(
             "prestashop.product.combination",

@@ -19,7 +19,9 @@ ExpectedProductBrand = namedtuple("ExpectedProductBrand", "name")
 ExpectedTemplate = namedtuple("ExpectedProduct", "name categ_id categ_ids list_price")
 
 ExpectedVariant = namedtuple(
-    "ExpectedVariant", "default_code standard_price attribute_value_ids"
+    "ExpectedVariant",
+    "default_code standard_price"
+    " product_template_attribute_value_ids__product_attribute_value_id",
 )
 
 
@@ -97,9 +99,10 @@ class TestImportProduct(PrestashopTransactionCase):
     def test_import_product_record_category(self):
         """ Import a product category """
         with recorder.use_cassette("test_import_product_category_record_1"):
-            self.env["prestashop.product.category"].import_record(
-                self.backend_record, 5
-            )
+            for i in range(1, 6):
+                self.env["prestashop.product.category"].import_record(
+                    self.backend_record, i
+                )
 
         domain = [
             ("prestashop_id", "=", 5),
@@ -151,6 +154,12 @@ class TestImportProduct(PrestashopTransactionCase):
                 idx,
             )
             categs |= cat
+        color_attr = self.env["product.attribute"].search([("name", "=", "Color")])
+        conflict_lines = self.env["product.template.attribute.line"].search([
+            ("attribute_id", "=", color_attr.id)
+        ])
+        if conflict_lines:
+            conflict_lines.unlink()
 
         with recorder.use_cassette("test_import_product_template_record_1"):
             self.env["prestashop.product.template"].import_record(
@@ -200,32 +209,38 @@ class TestImportProduct(PrestashopTransactionCase):
             ExpectedVariant(
                 default_code="1_1",
                 standard_price=4.95,
-                attribute_value_ids=value_s + value_orange,
+                product_template_attribute_value_ids__product_attribute_value_id=value_s
+                + value_orange,
             ),
             ExpectedVariant(
                 default_code="1_2",
                 standard_price=4.95,
-                attribute_value_ids=value_s + value_blue,
+                product_template_attribute_value_ids__product_attribute_value_id=value_s
+                + value_blue,
             ),
             ExpectedVariant(
                 default_code="1_3",
                 standard_price=4.95,
-                attribute_value_ids=value_m + value_orange,
+                product_template_attribute_value_ids__product_attribute_value_id=value_m
+                + value_orange,
             ),
             ExpectedVariant(
                 default_code="1_4",
                 standard_price=4.95,
-                attribute_value_ids=value_m + value_blue,
+                product_template_attribute_value_ids__product_attribute_value_id=value_m
+                + value_blue,
             ),
             ExpectedVariant(
                 default_code="1_5",
                 standard_price=4.95,
-                attribute_value_ids=value_l + value_orange,
+                product_template_attribute_value_ids__product_attribute_value_id=value_l
+                + value_orange,
             ),
             ExpectedVariant(
                 default_code="1_6",
                 standard_price=4.95,
-                attribute_value_ids=value_l + value_blue,
+                product_template_attribute_value_ids__product_attribute_value_id=value_l
+                + value_blue,
             ),
         ]
 

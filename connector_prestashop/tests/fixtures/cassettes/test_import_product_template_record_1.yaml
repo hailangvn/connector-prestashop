@@ -11,17 +11,14 @@ interactions:
     response:
       body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
             xmlns:xlink=\"\
-            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer\
-            \
+            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer
             xlink:href=\"http://172.30.0.7/api/manufacturers/1\"><![CDATA[1]]></id_manufacturer>\n\
             \t<id_supplier
             xlink:href=\"http://172.30.0.7/api/suppliers/1\"><![CDATA[1]]></id_supplier>\n\
             \t<id_category_default
             xlink:href=\"http://172.30.0.7/api/categories/5\"><![CDATA[5]]></id_category_default>\n\
             \t<new></new>\n\t<cache_default_attribute><![CDATA[1]]></cache_default_attribute>\n\
-            \t<id_default_image
-            xlink:href=\"http://172.30.0.7/api/images/products/1/1\"\
-            \
+            \t<id_default_image xlink:href=\"http://172.30.0.7/api/images/products/1/1\"
             notFilterable=\"true\"><![CDATA[1]]></id_default_image>\n\t<id_default_combination\
             \ xlink:href=\"http://172.30.0.7/api/combinations/1\"
             notFilterable=\"true\"\
@@ -53,8 +50,7 @@ interactions:
             \t<indexed><![CDATA[1]]></indexed>\n\t<visibility><![CDATA[both]]></visibility>\n\
             \t<advanced_stock_management><![CDATA[0]]></advanced_stock_management>\n\t\
             <date_add><![CDATA[2019-01-30
-            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30\
-            \
+            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30 \
             01:02:09]]></date_upd>\n\t<pack_stock_type><![CDATA[3]]></pack_stock_type>\n\
             \t<meta_description><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
@@ -64,8 +60,7 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n\
             \t<meta_title><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
-            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\"\
-            \
+            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\" \
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[faded-short-sleeves-tshirt]]></language></link_rewrite>\n\
             \t<name><language id=\"1\" xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Faded Short Sleeves
@@ -134,13 +129,11 @@ interactions:
             nodeType=\"product_option_value\"\
             \ api=\"product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
-            \
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
-            \
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/3\"\
@@ -149,13 +142,11 @@ interactions:
             \t<product_feature xlink:href=\"http://172.30.0.7/api/product_features/5\"\
             >\n\t<id><![CDATA[5]]></id>\n\t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/5\"\
-            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
-            \
+            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             xlink:href=\"http://172.30.0.7/api/product_features/6\">\n\t<id><![CDATA[6]]></id>\n\
             \t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/11\"\
-            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
-            \
+            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             xlink:href=\"http://172.30.0.7/api/product_features/7\">\n\t<id><![CDATA[7]]></id>\n\
             \t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/17\"\
@@ -213,7 +204,7 @@ interactions:
     response:
       body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
             xmlns:xlink=\"\
-            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer\
+            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer
             \
             xlink:href=\"http://172.30.0.7/api/manufacturers/1\"><![CDATA[1]]></id_manufacturer>\n\
             \t<id_supplier
@@ -221,8 +212,7 @@ interactions:
             \t<id_category_default
             xlink:href=\"http://172.30.0.7/api/categories/5\"><![CDATA[5]]></id_category_default>\n\
             \t<new></new>\n\t<cache_default_attribute><![CDATA[1]]></cache_default_attribute>\n\
-            \t<id_default_image
-            xlink:href=\"http://172.30.0.7/api/images/products/1/1\"\
+            \t<id_default_image xlink:href=\"http://172.30.0.7/api/images/products/1/1\"
             \
             notFilterable=\"true\"><![CDATA[1]]></id_default_image>\n\t<id_default_combination\
             \ xlink:href=\"http://172.30.0.7/api/combinations/1\"
@@ -255,8 +245,7 @@ interactions:
             \t<indexed><![CDATA[1]]></indexed>\n\t<visibility><![CDATA[both]]></visibility>\n\
             \t<advanced_stock_management><![CDATA[0]]></advanced_stock_management>\n\t\
             <date_add><![CDATA[2019-01-30
-            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30\
-            \
+            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30 \
             01:02:09]]></date_upd>\n\t<pack_stock_type><![CDATA[3]]></pack_stock_type>\n\
             \t<meta_description><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
@@ -266,8 +255,7 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n\
             \t<meta_title><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
-            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\"\
-            \
+            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\" \
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[faded-short-sleeves-tshirt]]></language></link_rewrite>\n\
             \t<name><language id=\"1\" xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Faded Short Sleeves
@@ -336,12 +324,12 @@ interactions:
             nodeType=\"product_option_value\"\
             \ api=\"product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
@@ -351,12 +339,12 @@ interactions:
             \t<product_feature xlink:href=\"http://172.30.0.7/api/product_features/5\"\
             >\n\t<id><![CDATA[5]]></id>\n\t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/5\"\
-            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/6\">\n\t<id><![CDATA[6]]></id>\n\
             \t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/11\"\
-            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/7\">\n\t<id><![CDATA[7]]></id>\n\
             \t<id_feature_value
@@ -415,7 +403,7 @@ interactions:
     response:
       body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
             xmlns:xlink=\"\
-            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer\
+            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer
             \
             xlink:href=\"http://172.30.0.7/api/manufacturers/1\"><![CDATA[1]]></id_manufacturer>\n\
             \t<id_supplier
@@ -423,8 +411,7 @@ interactions:
             \t<id_category_default
             xlink:href=\"http://172.30.0.7/api/categories/5\"><![CDATA[5]]></id_category_default>\n\
             \t<new></new>\n\t<cache_default_attribute><![CDATA[1]]></cache_default_attribute>\n\
-            \t<id_default_image
-            xlink:href=\"http://172.30.0.7/api/images/products/1/1\"\
+            \t<id_default_image xlink:href=\"http://172.30.0.7/api/images/products/1/1\"
             \
             notFilterable=\"true\"><![CDATA[1]]></id_default_image>\n\t<id_default_combination\
             \ xlink:href=\"http://172.30.0.7/api/combinations/1\"
@@ -457,8 +444,7 @@ interactions:
             \t<indexed><![CDATA[1]]></indexed>\n\t<visibility><![CDATA[both]]></visibility>\n\
             \t<advanced_stock_management><![CDATA[0]]></advanced_stock_management>\n\t\
             <date_add><![CDATA[2019-01-30
-            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30\
-            \
+            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30 \
             01:02:09]]></date_upd>\n\t<pack_stock_type><![CDATA[3]]></pack_stock_type>\n\
             \t<meta_description><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
@@ -468,8 +454,7 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n\
             \t<meta_title><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
-            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\"\
-            \
+            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\" \
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[faded-short-sleeves-tshirt]]></language></link_rewrite>\n\
             \t<name><language id=\"1\" xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Faded Short Sleeves
@@ -538,12 +523,12 @@ interactions:
             nodeType=\"product_option_value\"\
             \ api=\"product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
@@ -553,12 +538,12 @@ interactions:
             \t<product_feature xlink:href=\"http://172.30.0.7/api/product_features/5\"\
             >\n\t<id><![CDATA[5]]></id>\n\t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/5\"\
-            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/6\">\n\t<id><![CDATA[6]]></id>\n\
             \t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/11\"\
-            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/7\">\n\t<id><![CDATA[7]]></id>\n\
             \t<id_feature_value
@@ -617,7 +602,7 @@ interactions:
     response:
       body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
             xmlns:xlink=\"\
-            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer\
+            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer
             \
             xlink:href=\"http://172.30.0.7/api/manufacturers/1\"><![CDATA[1]]></id_manufacturer>\n\
             \t<id_supplier
@@ -625,8 +610,7 @@ interactions:
             \t<id_category_default
             xlink:href=\"http://172.30.0.7/api/categories/5\"><![CDATA[5]]></id_category_default>\n\
             \t<new></new>\n\t<cache_default_attribute><![CDATA[1]]></cache_default_attribute>\n\
-            \t<id_default_image
-            xlink:href=\"http://172.30.0.7/api/images/products/1/1\"\
+            \t<id_default_image xlink:href=\"http://172.30.0.7/api/images/products/1/1\"
             \
             notFilterable=\"true\"><![CDATA[1]]></id_default_image>\n\t<id_default_combination\
             \ xlink:href=\"http://172.30.0.7/api/combinations/1\"
@@ -659,8 +643,7 @@ interactions:
             \t<indexed><![CDATA[1]]></indexed>\n\t<visibility><![CDATA[both]]></visibility>\n\
             \t<advanced_stock_management><![CDATA[0]]></advanced_stock_management>\n\t\
             <date_add><![CDATA[2019-01-30
-            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30\
-            \
+            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30 \
             01:02:09]]></date_upd>\n\t<pack_stock_type><![CDATA[3]]></pack_stock_type>\n\
             \t<meta_description><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
@@ -670,8 +653,7 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n\
             \t<meta_title><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
-            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\"\
-            \
+            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\" \
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[faded-short-sleeves-tshirt]]></language></link_rewrite>\n\
             \t<name><language id=\"1\" xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Faded Short Sleeves
@@ -740,12 +722,12 @@ interactions:
             nodeType=\"product_option_value\"\
             \ api=\"product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
@@ -755,12 +737,12 @@ interactions:
             \t<product_feature xlink:href=\"http://172.30.0.7/api/product_features/5\"\
             >\n\t<id><![CDATA[5]]></id>\n\t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/5\"\
-            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/6\">\n\t<id><![CDATA[6]]></id>\n\
             \t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/11\"\
-            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/7\">\n\t<id><![CDATA[7]]></id>\n\
             \t<id_feature_value
@@ -832,7 +814,7 @@ interactions:
             api=\"\
             product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n</product_option_values>\n<images
@@ -920,12 +902,11 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Size]]></language></public_name>\n<associations>\n<product_option_values\
             \ nodeType=\"product_option_value\"
-            api=\"product_option_values\">\n\t<product_option_value\
-            \
+            api=\"product_option_values\">\n\t<product_option_value \
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\">\n\t<id><![CDATA[1]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/3\">\n\t<id><![CDATA[3]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
@@ -1159,37 +1140,36 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Color]]></language></public_name>\n<associations>\n<product_option_values\
             \ nodeType=\"product_option_value\"
-            api=\"product_option_values\">\n\t<product_option_value\
-            \
+            api=\"product_option_values\">\n\t<product_option_value \
             xlink:href=\"http://172.30.0.7/api/product_option_values/5\">\n\t<id><![CDATA[5]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/6\"\
-            >\n\t<id><![CDATA[6]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[6]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/7\">\n\t<id><![CDATA[7]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/8\"\
-            >\n\t<id><![CDATA[8]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[8]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/9\">\n\t<id><![CDATA[9]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/10\"\
-            >\n\t<id><![CDATA[10]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[10]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/11\">\n\t<id><![CDATA[11]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/12\"\
-            >\n\t<id><![CDATA[12]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[12]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\"\
-            >\n\t<id><![CDATA[14]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[14]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/15\">\n\t<id><![CDATA[15]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/16\"\
-            >\n\t<id><![CDATA[16]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[16]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/17\">\n\t<id><![CDATA[17]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
@@ -1774,7 +1754,7 @@ interactions:
     response:
       body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
             xmlns:xlink=\"\
-            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer\
+            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer
             \
             xlink:href=\"http://172.30.0.7/api/manufacturers/1\"><![CDATA[1]]></id_manufacturer>\n\
             \t<id_supplier
@@ -1782,8 +1762,7 @@ interactions:
             \t<id_category_default
             xlink:href=\"http://172.30.0.7/api/categories/5\"><![CDATA[5]]></id_category_default>\n\
             \t<new></new>\n\t<cache_default_attribute><![CDATA[1]]></cache_default_attribute>\n\
-            \t<id_default_image
-            xlink:href=\"http://172.30.0.7/api/images/products/1/1\"\
+            \t<id_default_image xlink:href=\"http://172.30.0.7/api/images/products/1/1\"
             \
             notFilterable=\"true\"><![CDATA[1]]></id_default_image>\n\t<id_default_combination\
             \ xlink:href=\"http://172.30.0.7/api/combinations/1\"
@@ -1816,8 +1795,7 @@ interactions:
             \t<indexed><![CDATA[1]]></indexed>\n\t<visibility><![CDATA[both]]></visibility>\n\
             \t<advanced_stock_management><![CDATA[0]]></advanced_stock_management>\n\t\
             <date_add><![CDATA[2019-01-30
-            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30\
-            \
+            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30 \
             01:02:09]]></date_upd>\n\t<pack_stock_type><![CDATA[3]]></pack_stock_type>\n\
             \t<meta_description><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
@@ -1827,8 +1805,7 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n\
             \t<meta_title><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
-            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\"\
-            \
+            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\" \
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[faded-short-sleeves-tshirt]]></language></link_rewrite>\n\
             \t<name><language id=\"1\" xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Faded Short Sleeves
@@ -1897,12 +1874,12 @@ interactions:
             nodeType=\"product_option_value\"\
             \ api=\"product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
@@ -1912,12 +1889,12 @@ interactions:
             \t<product_feature xlink:href=\"http://172.30.0.7/api/product_features/5\"\
             >\n\t<id><![CDATA[5]]></id>\n\t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/5\"\
-            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/6\">\n\t<id><![CDATA[6]]></id>\n\
             \t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/11\"\
-            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/7\">\n\t<id><![CDATA[7]]></id>\n\
             \t<id_feature_value
@@ -1976,7 +1953,7 @@ interactions:
     response:
       body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
             xmlns:xlink=\"\
-            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer\
+            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer
             \
             xlink:href=\"http://172.30.0.7/api/manufacturers/1\"><![CDATA[1]]></id_manufacturer>\n\
             \t<id_supplier
@@ -1984,8 +1961,7 @@ interactions:
             \t<id_category_default
             xlink:href=\"http://172.30.0.7/api/categories/5\"><![CDATA[5]]></id_category_default>\n\
             \t<new></new>\n\t<cache_default_attribute><![CDATA[1]]></cache_default_attribute>\n\
-            \t<id_default_image
-            xlink:href=\"http://172.30.0.7/api/images/products/1/1\"\
+            \t<id_default_image xlink:href=\"http://172.30.0.7/api/images/products/1/1\"
             \
             notFilterable=\"true\"><![CDATA[1]]></id_default_image>\n\t<id_default_combination\
             \ xlink:href=\"http://172.30.0.7/api/combinations/1\"
@@ -2018,8 +1994,7 @@ interactions:
             \t<indexed><![CDATA[1]]></indexed>\n\t<visibility><![CDATA[both]]></visibility>\n\
             \t<advanced_stock_management><![CDATA[0]]></advanced_stock_management>\n\t\
             <date_add><![CDATA[2019-01-30
-            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30\
-            \
+            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30 \
             01:02:09]]></date_upd>\n\t<pack_stock_type><![CDATA[3]]></pack_stock_type>\n\
             \t<meta_description><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
@@ -2029,8 +2004,7 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n\
             \t<meta_title><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
-            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\"\
-            \
+            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\" \
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[faded-short-sleeves-tshirt]]></language></link_rewrite>\n\
             \t<name><language id=\"1\" xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Faded Short Sleeves
@@ -2099,12 +2073,12 @@ interactions:
             nodeType=\"product_option_value\"\
             \ api=\"product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
@@ -2114,12 +2088,12 @@ interactions:
             \t<product_feature xlink:href=\"http://172.30.0.7/api/product_features/5\"\
             >\n\t<id><![CDATA[5]]></id>\n\t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/5\"\
-            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/6\">\n\t<id><![CDATA[6]]></id>\n\
             \t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/11\"\
-            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/7\">\n\t<id><![CDATA[7]]></id>\n\
             \t<id_feature_value
@@ -2195,7 +2169,7 @@ interactions:
             api=\"\
             product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n</product_option_values>\n<images
@@ -2245,7 +2219,7 @@ interactions:
             api=\"\
             product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n</product_option_values>\n<images
@@ -2362,7 +2336,7 @@ interactions:
     response:
       body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
             xmlns:xlink=\"\
-            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer\
+            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer
             \
             xlink:href=\"http://172.30.0.7/api/manufacturers/1\"><![CDATA[1]]></id_manufacturer>\n\
             \t<id_supplier
@@ -2370,8 +2344,7 @@ interactions:
             \t<id_category_default
             xlink:href=\"http://172.30.0.7/api/categories/5\"><![CDATA[5]]></id_category_default>\n\
             \t<new></new>\n\t<cache_default_attribute><![CDATA[1]]></cache_default_attribute>\n\
-            \t<id_default_image
-            xlink:href=\"http://172.30.0.7/api/images/products/1/1\"\
+            \t<id_default_image xlink:href=\"http://172.30.0.7/api/images/products/1/1\"
             \
             notFilterable=\"true\"><![CDATA[1]]></id_default_image>\n\t<id_default_combination\
             \ xlink:href=\"http://172.30.0.7/api/combinations/1\"
@@ -2404,8 +2377,7 @@ interactions:
             \t<indexed><![CDATA[1]]></indexed>\n\t<visibility><![CDATA[both]]></visibility>\n\
             \t<advanced_stock_management><![CDATA[0]]></advanced_stock_management>\n\t\
             <date_add><![CDATA[2019-01-30
-            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30\
-            \
+            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30 \
             01:02:09]]></date_upd>\n\t<pack_stock_type><![CDATA[3]]></pack_stock_type>\n\
             \t<meta_description><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
@@ -2415,8 +2387,7 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n\
             \t<meta_title><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
-            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\"\
-            \
+            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\" \
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[faded-short-sleeves-tshirt]]></language></link_rewrite>\n\
             \t<name><language id=\"1\" xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Faded Short Sleeves
@@ -2485,12 +2456,12 @@ interactions:
             nodeType=\"product_option_value\"\
             \ api=\"product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
@@ -2500,12 +2471,12 @@ interactions:
             \t<product_feature xlink:href=\"http://172.30.0.7/api/product_features/5\"\
             >\n\t<id><![CDATA[5]]></id>\n\t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/5\"\
-            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/6\">\n\t<id><![CDATA[6]]></id>\n\
             \t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/11\"\
-            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/7\">\n\t<id><![CDATA[7]]></id>\n\
             \t<id_feature_value
@@ -2564,7 +2535,7 @@ interactions:
     response:
       body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
             xmlns:xlink=\"\
-            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer\
+            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer
             \
             xlink:href=\"http://172.30.0.7/api/manufacturers/1\"><![CDATA[1]]></id_manufacturer>\n\
             \t<id_supplier
@@ -2572,8 +2543,7 @@ interactions:
             \t<id_category_default
             xlink:href=\"http://172.30.0.7/api/categories/5\"><![CDATA[5]]></id_category_default>\n\
             \t<new></new>\n\t<cache_default_attribute><![CDATA[1]]></cache_default_attribute>\n\
-            \t<id_default_image
-            xlink:href=\"http://172.30.0.7/api/images/products/1/1\"\
+            \t<id_default_image xlink:href=\"http://172.30.0.7/api/images/products/1/1\"
             \
             notFilterable=\"true\"><![CDATA[1]]></id_default_image>\n\t<id_default_combination\
             \ xlink:href=\"http://172.30.0.7/api/combinations/1\"
@@ -2606,8 +2576,7 @@ interactions:
             \t<indexed><![CDATA[1]]></indexed>\n\t<visibility><![CDATA[both]]></visibility>\n\
             \t<advanced_stock_management><![CDATA[0]]></advanced_stock_management>\n\t\
             <date_add><![CDATA[2019-01-30
-            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30\
-            \
+            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30 \
             01:02:09]]></date_upd>\n\t<pack_stock_type><![CDATA[3]]></pack_stock_type>\n\
             \t<meta_description><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
@@ -2617,8 +2586,7 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n\
             \t<meta_title><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
-            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\"\
-            \
+            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\" \
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[faded-short-sleeves-tshirt]]></language></link_rewrite>\n\
             \t<name><language id=\"1\" xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Faded Short Sleeves
@@ -2687,12 +2655,12 @@ interactions:
             nodeType=\"product_option_value\"\
             \ api=\"product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
@@ -2702,12 +2670,12 @@ interactions:
             \t<product_feature xlink:href=\"http://172.30.0.7/api/product_features/5\"\
             >\n\t<id><![CDATA[5]]></id>\n\t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/5\"\
-            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/6\">\n\t<id><![CDATA[6]]></id>\n\
             \t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/11\"\
-            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/7\">\n\t<id><![CDATA[7]]></id>\n\
             \t<id_feature_value
@@ -2783,7 +2751,7 @@ interactions:
             api=\"\
             product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n</product_option_values>\n<images
@@ -2833,7 +2801,7 @@ interactions:
             api=\"\
             product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n</product_option_values>\n<images
@@ -2950,7 +2918,7 @@ interactions:
     response:
       body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
             xmlns:xlink=\"\
-            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer\
+            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer
             \
             xlink:href=\"http://172.30.0.7/api/manufacturers/1\"><![CDATA[1]]></id_manufacturer>\n\
             \t<id_supplier
@@ -2958,8 +2926,7 @@ interactions:
             \t<id_category_default
             xlink:href=\"http://172.30.0.7/api/categories/5\"><![CDATA[5]]></id_category_default>\n\
             \t<new></new>\n\t<cache_default_attribute><![CDATA[1]]></cache_default_attribute>\n\
-            \t<id_default_image
-            xlink:href=\"http://172.30.0.7/api/images/products/1/1\"\
+            \t<id_default_image xlink:href=\"http://172.30.0.7/api/images/products/1/1\"
             \
             notFilterable=\"true\"><![CDATA[1]]></id_default_image>\n\t<id_default_combination\
             \ xlink:href=\"http://172.30.0.7/api/combinations/1\"
@@ -2992,8 +2959,7 @@ interactions:
             \t<indexed><![CDATA[1]]></indexed>\n\t<visibility><![CDATA[both]]></visibility>\n\
             \t<advanced_stock_management><![CDATA[0]]></advanced_stock_management>\n\t\
             <date_add><![CDATA[2019-01-30
-            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30\
-            \
+            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30 \
             01:02:09]]></date_upd>\n\t<pack_stock_type><![CDATA[3]]></pack_stock_type>\n\
             \t<meta_description><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
@@ -3003,8 +2969,7 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n\
             \t<meta_title><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
-            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\"\
-            \
+            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\" \
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[faded-short-sleeves-tshirt]]></language></link_rewrite>\n\
             \t<name><language id=\"1\" xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Faded Short Sleeves
@@ -3073,12 +3038,12 @@ interactions:
             nodeType=\"product_option_value\"\
             \ api=\"product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
@@ -3088,12 +3053,12 @@ interactions:
             \t<product_feature xlink:href=\"http://172.30.0.7/api/product_features/5\"\
             >\n\t<id><![CDATA[5]]></id>\n\t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/5\"\
-            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/6\">\n\t<id><![CDATA[6]]></id>\n\
             \t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/11\"\
-            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/7\">\n\t<id><![CDATA[7]]></id>\n\
             \t<id_feature_value
@@ -3152,7 +3117,7 @@ interactions:
     response:
       body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
             xmlns:xlink=\"\
-            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer\
+            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer
             \
             xlink:href=\"http://172.30.0.7/api/manufacturers/1\"><![CDATA[1]]></id_manufacturer>\n\
             \t<id_supplier
@@ -3160,8 +3125,7 @@ interactions:
             \t<id_category_default
             xlink:href=\"http://172.30.0.7/api/categories/5\"><![CDATA[5]]></id_category_default>\n\
             \t<new></new>\n\t<cache_default_attribute><![CDATA[1]]></cache_default_attribute>\n\
-            \t<id_default_image
-            xlink:href=\"http://172.30.0.7/api/images/products/1/1\"\
+            \t<id_default_image xlink:href=\"http://172.30.0.7/api/images/products/1/1\"
             \
             notFilterable=\"true\"><![CDATA[1]]></id_default_image>\n\t<id_default_combination\
             \ xlink:href=\"http://172.30.0.7/api/combinations/1\"
@@ -3194,8 +3158,7 @@ interactions:
             \t<indexed><![CDATA[1]]></indexed>\n\t<visibility><![CDATA[both]]></visibility>\n\
             \t<advanced_stock_management><![CDATA[0]]></advanced_stock_management>\n\t\
             <date_add><![CDATA[2019-01-30
-            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30\
-            \
+            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30 \
             01:02:09]]></date_upd>\n\t<pack_stock_type><![CDATA[3]]></pack_stock_type>\n\
             \t<meta_description><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
@@ -3205,8 +3168,7 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n\
             \t<meta_title><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
-            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\"\
-            \
+            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\" \
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[faded-short-sleeves-tshirt]]></language></link_rewrite>\n\
             \t<name><language id=\"1\" xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Faded Short Sleeves
@@ -3275,12 +3237,12 @@ interactions:
             nodeType=\"product_option_value\"\
             \ api=\"product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
@@ -3290,12 +3252,12 @@ interactions:
             \t<product_feature xlink:href=\"http://172.30.0.7/api/product_features/5\"\
             >\n\t<id><![CDATA[5]]></id>\n\t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/5\"\
-            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/6\">\n\t<id><![CDATA[6]]></id>\n\
             \t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/11\"\
-            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/7\">\n\t<id><![CDATA[7]]></id>\n\
             \t<id_feature_value
@@ -3371,7 +3333,7 @@ interactions:
             api=\"\
             product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n</product_option_values>\n<images
@@ -3421,7 +3383,7 @@ interactions:
             api=\"\
             product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n</product_option_values>\n<images
@@ -3538,7 +3500,7 @@ interactions:
     response:
       body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
             xmlns:xlink=\"\
-            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer\
+            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer
             \
             xlink:href=\"http://172.30.0.7/api/manufacturers/1\"><![CDATA[1]]></id_manufacturer>\n\
             \t<id_supplier
@@ -3546,8 +3508,7 @@ interactions:
             \t<id_category_default
             xlink:href=\"http://172.30.0.7/api/categories/5\"><![CDATA[5]]></id_category_default>\n\
             \t<new></new>\n\t<cache_default_attribute><![CDATA[1]]></cache_default_attribute>\n\
-            \t<id_default_image
-            xlink:href=\"http://172.30.0.7/api/images/products/1/1\"\
+            \t<id_default_image xlink:href=\"http://172.30.0.7/api/images/products/1/1\"
             \
             notFilterable=\"true\"><![CDATA[1]]></id_default_image>\n\t<id_default_combination\
             \ xlink:href=\"http://172.30.0.7/api/combinations/1\"
@@ -3580,8 +3541,7 @@ interactions:
             \t<indexed><![CDATA[1]]></indexed>\n\t<visibility><![CDATA[both]]></visibility>\n\
             \t<advanced_stock_management><![CDATA[0]]></advanced_stock_management>\n\t\
             <date_add><![CDATA[2019-01-30
-            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30\
-            \
+            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30 \
             01:02:09]]></date_upd>\n\t<pack_stock_type><![CDATA[3]]></pack_stock_type>\n\
             \t<meta_description><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
@@ -3591,8 +3551,7 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n\
             \t<meta_title><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
-            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\"\
-            \
+            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\" \
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[faded-short-sleeves-tshirt]]></language></link_rewrite>\n\
             \t<name><language id=\"1\" xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Faded Short Sleeves
@@ -3661,12 +3620,12 @@ interactions:
             nodeType=\"product_option_value\"\
             \ api=\"product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
@@ -3676,12 +3635,12 @@ interactions:
             \t<product_feature xlink:href=\"http://172.30.0.7/api/product_features/5\"\
             >\n\t<id><![CDATA[5]]></id>\n\t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/5\"\
-            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/6\">\n\t<id><![CDATA[6]]></id>\n\
             \t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/11\"\
-            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/7\">\n\t<id><![CDATA[7]]></id>\n\
             \t<id_feature_value
@@ -3740,7 +3699,7 @@ interactions:
     response:
       body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
             xmlns:xlink=\"\
-            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer\
+            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer
             \
             xlink:href=\"http://172.30.0.7/api/manufacturers/1\"><![CDATA[1]]></id_manufacturer>\n\
             \t<id_supplier
@@ -3748,8 +3707,7 @@ interactions:
             \t<id_category_default
             xlink:href=\"http://172.30.0.7/api/categories/5\"><![CDATA[5]]></id_category_default>\n\
             \t<new></new>\n\t<cache_default_attribute><![CDATA[1]]></cache_default_attribute>\n\
-            \t<id_default_image
-            xlink:href=\"http://172.30.0.7/api/images/products/1/1\"\
+            \t<id_default_image xlink:href=\"http://172.30.0.7/api/images/products/1/1\"
             \
             notFilterable=\"true\"><![CDATA[1]]></id_default_image>\n\t<id_default_combination\
             \ xlink:href=\"http://172.30.0.7/api/combinations/1\"
@@ -3782,8 +3740,7 @@ interactions:
             \t<indexed><![CDATA[1]]></indexed>\n\t<visibility><![CDATA[both]]></visibility>\n\
             \t<advanced_stock_management><![CDATA[0]]></advanced_stock_management>\n\t\
             <date_add><![CDATA[2019-01-30
-            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30\
-            \
+            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30 \
             01:02:09]]></date_upd>\n\t<pack_stock_type><![CDATA[3]]></pack_stock_type>\n\
             \t<meta_description><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
@@ -3793,8 +3750,7 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n\
             \t<meta_title><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
-            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\"\
-            \
+            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\" \
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[faded-short-sleeves-tshirt]]></language></link_rewrite>\n\
             \t<name><language id=\"1\" xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Faded Short Sleeves
@@ -3863,12 +3819,12 @@ interactions:
             nodeType=\"product_option_value\"\
             \ api=\"product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
@@ -3878,12 +3834,12 @@ interactions:
             \t<product_feature xlink:href=\"http://172.30.0.7/api/product_features/5\"\
             >\n\t<id><![CDATA[5]]></id>\n\t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/5\"\
-            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/6\">\n\t<id><![CDATA[6]]></id>\n\
             \t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/11\"\
-            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/7\">\n\t<id><![CDATA[7]]></id>\n\
             \t<id_feature_value
@@ -3959,7 +3915,7 @@ interactions:
             api=\"\
             product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n</product_option_values>\n<images
@@ -4009,7 +3965,7 @@ interactions:
             api=\"\
             product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/3\"\
-            >\n\t<id><![CDATA[3]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[3]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n</product_option_values>\n<images
@@ -4126,7 +4082,7 @@ interactions:
     response:
       body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
             xmlns:xlink=\"\
-            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer\
+            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer
             \
             xlink:href=\"http://172.30.0.7/api/manufacturers/1\"><![CDATA[1]]></id_manufacturer>\n\
             \t<id_supplier
@@ -4134,8 +4090,7 @@ interactions:
             \t<id_category_default
             xlink:href=\"http://172.30.0.7/api/categories/5\"><![CDATA[5]]></id_category_default>\n\
             \t<new></new>\n\t<cache_default_attribute><![CDATA[1]]></cache_default_attribute>\n\
-            \t<id_default_image
-            xlink:href=\"http://172.30.0.7/api/images/products/1/1\"\
+            \t<id_default_image xlink:href=\"http://172.30.0.7/api/images/products/1/1\"
             \
             notFilterable=\"true\"><![CDATA[1]]></id_default_image>\n\t<id_default_combination\
             \ xlink:href=\"http://172.30.0.7/api/combinations/1\"
@@ -4168,8 +4123,7 @@ interactions:
             \t<indexed><![CDATA[1]]></indexed>\n\t<visibility><![CDATA[both]]></visibility>\n\
             \t<advanced_stock_management><![CDATA[0]]></advanced_stock_management>\n\t\
             <date_add><![CDATA[2019-01-30
-            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30\
-            \
+            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30 \
             01:02:09]]></date_upd>\n\t<pack_stock_type><![CDATA[3]]></pack_stock_type>\n\
             \t<meta_description><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
@@ -4179,8 +4133,7 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n\
             \t<meta_title><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
-            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\"\
-            \
+            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\" \
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[faded-short-sleeves-tshirt]]></language></link_rewrite>\n\
             \t<name><language id=\"1\" xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Faded Short Sleeves
@@ -4249,12 +4202,12 @@ interactions:
             nodeType=\"product_option_value\"\
             \ api=\"product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
@@ -4264,12 +4217,12 @@ interactions:
             \t<product_feature xlink:href=\"http://172.30.0.7/api/product_features/5\"\
             >\n\t<id><![CDATA[5]]></id>\n\t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/5\"\
-            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/6\">\n\t<id><![CDATA[6]]></id>\n\
             \t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/11\"\
-            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/7\">\n\t<id><![CDATA[7]]></id>\n\
             \t<id_feature_value
@@ -4328,7 +4281,7 @@ interactions:
     response:
       body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
             xmlns:xlink=\"\
-            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer\
+            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer
             \
             xlink:href=\"http://172.30.0.7/api/manufacturers/1\"><![CDATA[1]]></id_manufacturer>\n\
             \t<id_supplier
@@ -4336,8 +4289,7 @@ interactions:
             \t<id_category_default
             xlink:href=\"http://172.30.0.7/api/categories/5\"><![CDATA[5]]></id_category_default>\n\
             \t<new></new>\n\t<cache_default_attribute><![CDATA[1]]></cache_default_attribute>\n\
-            \t<id_default_image
-            xlink:href=\"http://172.30.0.7/api/images/products/1/1\"\
+            \t<id_default_image xlink:href=\"http://172.30.0.7/api/images/products/1/1\"
             \
             notFilterable=\"true\"><![CDATA[1]]></id_default_image>\n\t<id_default_combination\
             \ xlink:href=\"http://172.30.0.7/api/combinations/1\"
@@ -4370,8 +4322,7 @@ interactions:
             \t<indexed><![CDATA[1]]></indexed>\n\t<visibility><![CDATA[both]]></visibility>\n\
             \t<advanced_stock_management><![CDATA[0]]></advanced_stock_management>\n\t\
             <date_add><![CDATA[2019-01-30
-            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30\
-            \
+            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30 \
             01:02:09]]></date_upd>\n\t<pack_stock_type><![CDATA[3]]></pack_stock_type>\n\
             \t<meta_description><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
@@ -4381,8 +4332,7 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n\
             \t<meta_title><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
-            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\"\
-            \
+            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\" \
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[faded-short-sleeves-tshirt]]></language></link_rewrite>\n\
             \t<name><language id=\"1\" xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Faded Short Sleeves
@@ -4451,12 +4401,12 @@ interactions:
             nodeType=\"product_option_value\"\
             \ api=\"product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
@@ -4466,12 +4416,12 @@ interactions:
             \t<product_feature xlink:href=\"http://172.30.0.7/api/product_features/5\"\
             >\n\t<id><![CDATA[5]]></id>\n\t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/5\"\
-            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/6\">\n\t<id><![CDATA[6]]></id>\n\
             \t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/11\"\
-            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/7\">\n\t<id><![CDATA[7]]></id>\n\
             \t<id_feature_value
@@ -4547,7 +4497,7 @@ interactions:
             api=\"\
             product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/3\"\
-            >\n\t<id><![CDATA[3]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[3]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n</product_option_values>\n<images
@@ -4597,7 +4547,7 @@ interactions:
             api=\"\
             product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/3\"\
-            >\n\t<id><![CDATA[3]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[3]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n</product_option_values>\n<images
@@ -4714,7 +4664,7 @@ interactions:
     response:
       body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
             xmlns:xlink=\"\
-            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer\
+            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer
             \
             xlink:href=\"http://172.30.0.7/api/manufacturers/1\"><![CDATA[1]]></id_manufacturer>\n\
             \t<id_supplier
@@ -4722,8 +4672,7 @@ interactions:
             \t<id_category_default
             xlink:href=\"http://172.30.0.7/api/categories/5\"><![CDATA[5]]></id_category_default>\n\
             \t<new></new>\n\t<cache_default_attribute><![CDATA[1]]></cache_default_attribute>\n\
-            \t<id_default_image
-            xlink:href=\"http://172.30.0.7/api/images/products/1/1\"\
+            \t<id_default_image xlink:href=\"http://172.30.0.7/api/images/products/1/1\"
             \
             notFilterable=\"true\"><![CDATA[1]]></id_default_image>\n\t<id_default_combination\
             \ xlink:href=\"http://172.30.0.7/api/combinations/1\"
@@ -4756,8 +4705,7 @@ interactions:
             \t<indexed><![CDATA[1]]></indexed>\n\t<visibility><![CDATA[both]]></visibility>\n\
             \t<advanced_stock_management><![CDATA[0]]></advanced_stock_management>\n\t\
             <date_add><![CDATA[2019-01-30
-            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30\
-            \
+            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30 \
             01:02:09]]></date_upd>\n\t<pack_stock_type><![CDATA[3]]></pack_stock_type>\n\
             \t<meta_description><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
@@ -4767,8 +4715,7 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n\
             \t<meta_title><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
-            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\"\
-            \
+            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\" \
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[faded-short-sleeves-tshirt]]></language></link_rewrite>\n\
             \t<name><language id=\"1\" xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Faded Short Sleeves
@@ -4837,12 +4784,12 @@ interactions:
             nodeType=\"product_option_value\"\
             \ api=\"product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
@@ -4852,12 +4799,12 @@ interactions:
             \t<product_feature xlink:href=\"http://172.30.0.7/api/product_features/5\"\
             >\n\t<id><![CDATA[5]]></id>\n\t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/5\"\
-            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/6\">\n\t<id><![CDATA[6]]></id>\n\
             \t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/11\"\
-            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/7\">\n\t<id><![CDATA[7]]></id>\n\
             \t<id_feature_value
@@ -4916,7 +4863,7 @@ interactions:
     response:
       body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
             xmlns:xlink=\"\
-            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer\
+            http://www.w3.org/1999/xlink\">\n<product>\n\t<id><![CDATA[1]]></id>\n\t<id_manufacturer
             \
             xlink:href=\"http://172.30.0.7/api/manufacturers/1\"><![CDATA[1]]></id_manufacturer>\n\
             \t<id_supplier
@@ -4924,8 +4871,7 @@ interactions:
             \t<id_category_default
             xlink:href=\"http://172.30.0.7/api/categories/5\"><![CDATA[5]]></id_category_default>\n\
             \t<new></new>\n\t<cache_default_attribute><![CDATA[1]]></cache_default_attribute>\n\
-            \t<id_default_image
-            xlink:href=\"http://172.30.0.7/api/images/products/1/1\"\
+            \t<id_default_image xlink:href=\"http://172.30.0.7/api/images/products/1/1\"
             \
             notFilterable=\"true\"><![CDATA[1]]></id_default_image>\n\t<id_default_combination\
             \ xlink:href=\"http://172.30.0.7/api/combinations/1\"
@@ -4958,8 +4904,7 @@ interactions:
             \t<indexed><![CDATA[1]]></indexed>\n\t<visibility><![CDATA[both]]></visibility>\n\
             \t<advanced_stock_management><![CDATA[0]]></advanced_stock_management>\n\t\
             <date_add><![CDATA[2019-01-30
-            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30\
-            \
+            01:02:09]]></date_add>\n\t<date_upd><![CDATA[2019-01-30 \
             01:02:09]]></date_upd>\n\t<pack_stock_type><![CDATA[3]]></pack_stock_type>\n\
             \t<meta_description><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
@@ -4969,8 +4914,7 @@ interactions:
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n\
             \t<meta_title><language id=\"1\"
             xlink:href=\"http://172.30.0.7/api/languages/1\"\
-            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\"\
-            \
+            ><![CDATA[]]></language></meta_title>\n\t<link_rewrite><language id=\"1\" \
             xlink:href=\"http://172.30.0.7/api/languages/1\"><![CDATA[faded-short-sleeves-tshirt]]></language></link_rewrite>\n\
             \t<name><language id=\"1\" xlink:href=\"http://172.30.0.7/api/languages/1\"\
             ><![CDATA[Faded Short Sleeves
@@ -5039,12 +4983,12 @@ interactions:
             nodeType=\"product_option_value\"\
             \ api=\"product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/1\"\
-            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[1]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/2\"\
-            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[2]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/13\">\n\t<id><![CDATA[13]]></id>\n\
             \t</product_option_value>\n\t<product_option_value
@@ -5054,12 +4998,12 @@ interactions:
             \t<product_feature xlink:href=\"http://172.30.0.7/api/product_features/5\"\
             >\n\t<id><![CDATA[5]]></id>\n\t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/5\"\
-            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[5]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/6\">\n\t<id><![CDATA[6]]></id>\n\
             \t<id_feature_value
             xlink:href=\"http://172.30.0.7/api/product_feature_values/11\"\
-            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature\
+            ><![CDATA[11]]></id_feature_value>\n\t</product_feature>\n\t<product_feature
             \
             xlink:href=\"http://172.30.0.7/api/product_features/7\">\n\t<id><![CDATA[7]]></id>\n\
             \t<id_feature_value
@@ -5135,7 +5079,7 @@ interactions:
             api=\"\
             product_option_values\">\n\t<product_option_value
             xlink:href=\"http://172.30.0.7/api/product_option_values/3\"\
-            >\n\t<id><![CDATA[3]]></id>\n\t</product_option_value>\n\t<product_option_value\
+            >\n\t<id><![CDATA[3]]></id>\n\t</product_option_value>\n\t<product_option_value
             \
             xlink:href=\"http://172.30.0.7/api/product_option_values/14\">\n\t<id><![CDATA[14]]></id>\n\
             \t</product_option_value>\n</product_option_values>\n<images
@@ -5159,5 +5103,43 @@ interactions:
         Vary: [Accept-Encoding]
         X-Powered-By: [PrestaShop Webservice]
         content-length: ["1436"]
+      status: {code: 200, message: OK}
+  - request:
+      body: null
+      headers:
+        Accept: ["*/*"]
+        Accept-Encoding: ["gzip, deflate"]
+        Connection: [keep-alive]
+        User-Agent: [python-requests/2.11.1]
+      method: GET
+      uri: http://www.prestashop_catalogmanager10.com/api/manufacturers/1
+    response:
+      body: {string: !!python/unicode "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
+          xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n<manufacturer>\n\t<id><![CDATA[1]]></id>\n\t<active><![CDATA[1]]></active>\n\t<link_rewrite
+          notFilterable=\"true\"><![CDATA[fashion-manufacturer]]></link_rewrite>\n\t<name><![CDATA[Fashion
+          Manufacturer]]></name>\n\t<date_add><![CDATA[2019-01-10 13:28:05]]></date_add>\n\t<date_upd><![CDATA[2019-01-10
+          13:28:05]]></date_upd>\n\t<description><language id=\"1\" xlink:href=\"http://www.prestashop_catalogmanager10.com/api/languages/1\"><![CDATA[]]></language></description>\n\t<short_description><language
+          id=\"1\" xlink:href=\"http://www.prestashop_catalogmanager10.com/api/languages/1\"><![CDATA[]]></language></short_description>\n\t<meta_title><language
+          id=\"1\" xlink:href=\"http://www.prestashop_catalogmanager10.com/api/languages/1\"><![CDATA[]]></language></meta_title>\n\t<meta_description><language
+          id=\"1\" xlink:href=\"http://www.prestashop_catalogmanager10.com/api/languages/1\"><![CDATA[]]></language></meta_description>\n\t<meta_keywords><language
+          id=\"1\" xlink:href=\"http://www.prestashop_catalogmanager10.com/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n<associations>\n<addresses
+          nodeType=\"address\" api=\"addresses\">\n\t<address xlink:href=\"http://www.prestashop_catalogmanager10.com/api/addresses/3\">\n\t<id
+          xlink:href=\"http://www.prestashop_catalogmanager10.com/api/addresses/3\"><![CDATA[3]]></id>\n\t</address>\n</addresses>\n</associations>\n</manufacturer>\n</prestashop>\n"}
+      headers:
+        access-time: ["1581004289"]
+        connection: [keep-alive]
+        content-length: ["1446"]
+        content-sha1: [92d1ae5449008fa15d24e1576cac85f39cf5c9bc]
+        content-type: [text/xml;charset=utf-8]
+        date: ["Thu, 06 Feb 2020 15:51:29 GMT"]
+        execution-time: ["0.002"]
+        psws-version: [1.6.1.22]
+        server: [nginx/1.10.3 (Ubuntu)]
+        set-cookie: ["PrestaShop-6afe1be0fe41e536d378c33ccb8576a7=1d5a115267b80f649ea5301e1861e884aa12461ca9d8403ba8c68b9dca5f6481%3AERwbwgjnbPhegaRWNyAjEMbi94vkNpm3a3yQloG7owMcj%2Fg0g1asbjaZnjaHuJU9EwZGC%2FvsR47BLkqjDBYuEygli9M0CUBMXkXrGDl675Y%3D;
+            expires=Wed, 26-Feb-2020 15:51:29 GMT; Max-Age=1728000; path=/; domain=www.prestashop_catalogmanager10.com;
+            HttpOnly"]
+        transfer-encoding: [chunked]
+        vary: [Accept-Encoding]
+        x-powered-by: [PrestaShop Webservice]
       status: {code: 200, message: OK}
 version: 1

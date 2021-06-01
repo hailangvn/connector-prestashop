@@ -96,6 +96,7 @@ class TestImportSale(PrestashopTransactionCase):
         mode_journal = self.env["account.journal"].search([], limit=1)
         payment_method_xmlid = "account.account_payment_method_manual_in"
         payment_method = self.env.ref(payment_method_xmlid)
+        mode_journal.inbound_payment_method_ids = payment_method
         payment_mode = self.env["account.payment.mode"].create(
             {
                 "name": "Bank wire",
@@ -125,18 +126,21 @@ class TestImportSale(PrestashopTransactionCase):
             name="Faded Short Sleeve T-shirts",
             template_ps_id=1,
             variant_ps_id=1,
+            link_rewrite="faded-short-sleeves-tshirt",
         )
         variant_tshirt_orange_s = variant_tshirt_orange_s_binding.odoo_id
         variant_blouse_black_s_binding = self._create_product_binding(
             name="Blouse",
             template_ps_id=2,
             variant_ps_id=7,
+            link_rewrite="blouse",
         )
         variant_blouse_black_s = variant_blouse_black_s_binding.odoo_id
         variant_dress_orange_s_binding = self._create_product_binding(
             name="Printed Dress",
             template_ps_id=3,
             variant_ps_id=13,
+            link_rewrite="printed-dress",
         )
         variant_dress_orange_s = variant_dress_orange_s_binding.odoo_id
 

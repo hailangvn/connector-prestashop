@@ -21,25 +21,24 @@ class PrestashopExportMapper(AbstractComponent):
 
     def _map_direct(self, record, from_attr, to_attr):
         res = super()._map_direct(record, from_attr, to_attr) or ""
-        if isinstance(from_attr, str):
-            column = self.model.fields_get()[from_attr]
-            if column["type"] == "boolean":
-                return res and 1 or 0
-            elif column["type"] == "float":
-                set_precision = False
-                if isinstance(res, (float, int)) and from_attr in self.model._fields:
-                    # force float precision:
-                    digits = self.model._fields[from_attr].digits
-                    if digits and digits[1] in (2, 3, 6):
-                        if digits[1] == 2:
-                            res = "{:.2f}".format(res)
-                        elif digits[1] == 3:
-                            res = "{:.3f}".format(res)
-                        elif digits[1] == 6:
-                            res = "{:.6f}".format(res)
-                        set_precision = True
-                if not set_precision:
-                    res = str(res)
+        if not isinstance(from_attr, str):
+            return res
+        column = self.model.fields_get()[from_attr]
+        if column["type"] == "boolean":
+            return res and 1 or 0
+        elif column["type"] == "float":
+            set_precision = False
+            # We've got column so from_attr is already in self.model._fields
+            if isinstance(res, (float, int)):
+                # force float precision:
+                digits = column['digits']
+                if digits and isinstance(digits[1], int):
+                    # Any reason we need more than 12 decimals?
+                    fmt = "{:." + str(max(digits[1], 12)) + "f}"
+                    res = fmt.format(res)
+                    set_precision = True
+            if not set_precision:
+                res = str(res)
         return res
 
 

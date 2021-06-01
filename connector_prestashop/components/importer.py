@@ -1,6 +1,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 import logging
+import threading
 from contextlib import closing, contextmanager
 
 import odoo
@@ -178,7 +179,8 @@ class PrestashopImporter(AbstractComponent):
                     self.env[
                         "base"
                     ].flush()  # TODO FIXME check if and why flush is mandatory here
-                    cr.commit()  # pylint: disable=invalid-commit
+                    if not getattr(threading.currentThread(), "testing", False):
+                        cr.commit()  # pylint: disable=invalid-commit
 
     def _check_in_new_connector_env(self):
         # with self.do_in_new_connector_env() as new_connector_env:

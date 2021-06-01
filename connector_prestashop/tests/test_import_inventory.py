@@ -67,6 +67,7 @@ class TestImportInventory(PrestashopTransactionCase):
             name="Faded Short Sleeves T-shirt",
             template_ps_id=1,
             variant_ps_id=1,
+            link_rewrite="faded-short-sleeves-tshirt",
         )
 
         template = variant_binding.odoo_id.product_tmpl_id
@@ -91,6 +92,7 @@ class TestImportInventory(PrestashopTransactionCase):
             name="Faded Short Sleeves T-shirt",
             template_ps_id=1,
             variant_ps_id=1,
+            link_rewrite="faded-short-sleeves-tshirt",
         )
 
         template = variant_binding.odoo_id.product_tmpl_id

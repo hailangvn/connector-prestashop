@@ -570,7 +570,7 @@ class ProductTemplateImporter(Component):
             return
         # avoid unactiving already inactive variant
         for product in binding.with_context(active_test=True).product_variant_ids:
-            if product.attribute_value_ids:
+            if product.product_template_attribute_value_ids:
                 continue
             self.env["product.product"].browse(product.id).write({"active": False})
 

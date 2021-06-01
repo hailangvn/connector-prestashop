@@ -87,7 +87,7 @@ interactions:
         Connection: [keep-alive]
         User-Agent: [python-requests/2.20.0]
       method: GET
-      uri: http://172.30.0.5/api/countries
+      uri: http://172.30.0.5/api/countries?filter%5Bactive%5D=1
     response:
       body: {string: '<?xml version="1.0" encoding="UTF-8"?>
 

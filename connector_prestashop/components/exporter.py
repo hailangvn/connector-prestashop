@@ -54,7 +54,8 @@ class PrestashopBaseExporter(AbstractComponent):
         self.binder.bind(self.prestashop_id, self.binding)
         # commit so we keep the external ID if several cascading exports
         # are called and one of them fails
-        self.env.cr.commit()  # pylint: disable=invalid-commit
+        if not getattr(threading.currentThread(), "testing", False):
+            self.env.cr.commit()  # pylint: disable=invalid-commit
         self._after_export()
         return result
 
