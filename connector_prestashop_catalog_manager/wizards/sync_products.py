@@ -9,6 +9,7 @@ _logger = logging.getLogger(__name__)
 
 class SyncProducts(models.TransientModel):
     _name = "sync.products"
+    _description = "Synchronize Products"
 
     def _bind_resync(self, product_ids):
         products = self.env["product.template"].browse(product_ids)

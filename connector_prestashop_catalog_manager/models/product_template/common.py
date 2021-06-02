@@ -1,8 +1,6 @@
 # © 2016 Sergio Teruel <sergio.teruel@tecnativa.com>
 # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 
-import odoo.addons.decimal_precision as dp
-
 from odoo import fields, models
 
 from odoo.addons.component.core import Component
@@ -19,7 +17,7 @@ class PrestashopProductTemplate(models.Model):
     online_only = fields.Boolean(string="Online Only")
     additional_shipping_cost = fields.Float(
         string="Additional Shipping Price",
-        digits=dp.get_precision("Product Price"),
+        digits="Product Price",
         help="Additionnal Shipping Price for the product on Prestashop",
     )
     available_now = fields.Char(string="Available Now", translate=True)

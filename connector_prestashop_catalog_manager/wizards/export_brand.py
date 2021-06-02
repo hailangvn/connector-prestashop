@@ -6,6 +6,7 @@ from odoo import fields, models
 
 class PrestashopExportProductBrand(models.TransientModel):
     _name = "wiz.prestashop.export.product.brand"
+    _description = "Prestashop Export Product Brand"
 
     def _default_backend(self):
         return self.env["prestashop.backend"].search([], limit=1).id

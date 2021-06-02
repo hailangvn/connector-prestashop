@@ -24,7 +24,7 @@
             "prestapyt",
             # tests dependencies
             "freezegun",
-            "vcr",
+            "vcrpy",
             "bs4",
         ],
     },

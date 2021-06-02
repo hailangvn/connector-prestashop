@@ -47,8 +47,10 @@ class TestExportProductCategory(CatalogManagerTransactionCase):
         )
         self.assertEqual(1, len(bindings))
         # check export delayed
+        # sequence of fields is from ./wizards/export_category.py
+        # > def export_categories
         self.instance_delay_record.export_record.assert_called_once_with(
-            fields=["default_shop_id", "backend_id", "odoo_id", "link_rewrite"]
+            fields=["backend_id", "default_shop_id", "link_rewrite", "odoo_id"]
         )
 
     @assert_no_job_delayed

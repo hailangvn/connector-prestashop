@@ -15,21 +15,6 @@ class TestExportProductProduct(CatalogManagerTransactionCase):
     def setUp(self):
         super().setUp()
 
-        # create and bind template
-        template = self.env["product.template"].create(
-            {
-                "name": "Printed Dress",
-            }
-        )
-        self.main_template_id = self.create_binding_no_export(
-            "prestashop.product.template",
-            template.id,
-            3,
-            **{
-                "default_shop_id": self.shop.id,
-            }
-        )
-
         # create and bind color attribute
         color_attribute = self.env["product.attribute"].create(
             {
@@ -72,28 +57,40 @@ class TestExportProductProduct(CatalogManagerTransactionCase):
             "prestashop.product.combination.option.value", size_value.id, 4
         )
 
-        # create product
-        self.product = self.env["product.product"].create(
+        # create and bind template
+        template = self.env["product.template"].create(
             {
-                "product_template_attribute_value_ids": [
-                    (
-                        6,
-                        False,
-                        [
-                            color_value.id,
-                            size_value.id,
-                        ],
-                    )
-                ],
-                "barcode": "8411788010150",
-                "default_code": "demo_3_OS",
-                "default_on": False,
-                "impact_price": 20.0,
-                "product_tmpl_id": template.id,
-                "standard_price": 10.0,
-                "weight": 0.1,
+                "name": "Printed Dress",
             }
         )
+        self.main_template_id = self.create_binding_no_export(
+            "prestashop.product.template",
+            template.id,
+            3,
+            **{
+                "default_shop_id": self.shop.id,
+                "link_rewrite": "printed-dress",
+                "attribute_line_ids": [(0, 0, {
+                    'attribute_id': color_attribute.id,
+                    'value_ids': [(6, 0, [color_value.id])]
+                }), (0, 0, {
+                    'attribute_id': size_attribute.id,
+                    'value_ids': [(6, 0, [size_value.id])]
+                })],
+            }
+        )
+
+        # update product
+        self.product = template.product_variant_ids[0]
+        self.product.write({
+            "barcode": "8411788010150",
+            "default_code": "demo_3_OS",
+            "default_on": False,
+            "impact_price": 20.0,
+            "product_tmpl_id": template.id,
+            "standard_price": 10.0,
+            "weight": 0.1,
+        })
 
     def _bind_product(self):
         return self.create_binding_no_export(
@@ -116,8 +113,9 @@ class TestExportProductProduct(CatalogManagerTransactionCase):
             }
         )
         # check export delayed
+        # The sequence of fields should follow above create
         self.instance_delay_record.export_record.assert_called_once_with(
-            fields=["main_template_id", "backend_id", "odoo_id"]
+            fields=["backend_id", "odoo_id", "main_template_id"]
         )
 
     def test_export_product_product_onwrite(self):
@@ -153,9 +151,13 @@ class TestExportProductProduct(CatalogManagerTransactionCase):
         # delete product
         self.product.unlink()
         # check export delete delayed
-        self.instance_delay_record.export_delete_record.assert_called_once_with(
-            "prestashop.product.combination", backend_id, 46, self.product
+        self.instance_delay_record.export_delete_record.assert_any_call(
+            backend_id, 46
         )
+        self.instance_delay_record.export_delete_record.assert_called_with(
+            backend_id, 3
+        )
+        assert self.instance_delay_record.export_delete_record.call_count == 2
 
     @assert_no_job_delayed
     def test_export_product_product_jobs(self):
@@ -200,20 +202,16 @@ class TestExportProductProduct(CatalogManagerTransactionCase):
             self.assertIn({"id": "13"}, ps_product_option_values)
 
             # delete combination in PS
-            map_record = binding.get_map_record_vals()
             self.env["prestashop.product.combination"].export_delete_record(
-                "prestashop.product.combination",
                 self.backend_record,
                 binding.prestashop_id,
-                map_record,
             )
 
             # check DELETE requests
             request = cassette.requests[1]
             self.assertEqual("DELETE", request.method)
             self.assertEqual(
-                "/api/combinations/%s/%s"
-                % (binding.prestashop_id, binding.prestashop_id),
+                "/api/combinations/{}".format(binding.prestashop_id),
                 self.parse_path(request.uri),
             )
             self.assertDictEqual({}, self.parse_qs(request.uri))

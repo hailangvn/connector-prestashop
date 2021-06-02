@@ -33,7 +33,7 @@ class PrestashopProductProductListener(Component):
     @skip_if(lambda self, record, **kwargs: self.need_to_export(record, **kwargs))
     def on_record_write(self, record, fields=None):
         """ Called when a record is written """
-        inventory_fields = PrestashopProductQuantityListener._get_inventory_fields()
+        inventory_fields = PrestashopProductQuantityListener._get_inventory_fields(self)
         fields = list(set(fields).difference(set(inventory_fields)))
         if fields:
             record.with_delay().export_record(fields=fields)

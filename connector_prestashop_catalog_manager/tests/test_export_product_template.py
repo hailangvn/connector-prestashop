@@ -91,6 +91,7 @@ class TestExportProduct(CatalogManagerTransactionCase):
             8,
             **{
                 "default_shop_id": self.shop.id,
+                "link_rewrite": "new-product",
             }
         ).with_context(connector_no_export=False)
 
@@ -109,8 +110,10 @@ class TestExportProduct(CatalogManagerTransactionCase):
         bindings = self.env[binding_model].search([("odoo_id", "=", self.template.id)])
         self.assertEqual(1, len(bindings))
         # check export delayed
+        # sequence of fields is from ./wizards/export_multiple_products.py
+        # > def create_prestashop_template
         self.instance_delay_record.export_record.assert_called_once_with(
-            fields=["default_shop_id", "backend_id", "odoo_id", "link_rewrite"]
+            fields=["backend_id", "default_shop_id", "link_rewrite", "odoo_id"]
         )
 
     @assert_no_job_delayed

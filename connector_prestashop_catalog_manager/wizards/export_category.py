@@ -7,6 +7,7 @@ from ..models.product_template.exporter import get_slug
 
 class PrestashopExportCategory(models.TransientModel):
     _name = "wiz.prestashop.export.category"
+    _description = "Prestashop Export Category"
 
     def _default_backend(self):
         return self.env["prestashop.backend"].search([], limit=1).id

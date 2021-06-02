@@ -25,6 +25,7 @@ class PrestashopCategImage(models.Model):
     _name = "prestashop.categ.image"
     _inherit = "prestashop.binding.odoo"
     _inherits = {"product.category": "odoo_id"}
+    _description = "Prestashop Category Image"
 
     odoo_id = fields.Many2one(
         comodel_name="product.category",

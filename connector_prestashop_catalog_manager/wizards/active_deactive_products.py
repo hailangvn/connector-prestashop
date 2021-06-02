@@ -5,6 +5,7 @@ from odoo import fields, models
 
 class SyncProducts(models.TransientModel):
     _name = "active.deactive.products"
+    _description = "Activate/Deactivate Products"
 
     force_status = fields.Boolean(
         string="Force Status",

@@ -27,6 +27,7 @@ def get_slug(name):
 
 class ExportMultipleProducts(models.TransientModel):
     _name = "export.multiple.products"
+    _description = "Export Multiple Products"
 
     def _default_backend(self):
         return self.env["prestashop.backend"].search([], limit=1).id
