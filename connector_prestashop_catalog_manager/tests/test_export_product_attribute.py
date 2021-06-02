@@ -83,7 +83,10 @@ class TestExportProductAttribute(CatalogManagerTransactionCase):
         # check export delayed
         self.assertEqual(1, self.instance_delay_record.export_record.call_count)
         # write in binding
-        binding.group_type = "radio"
+        # binding.display_type = "radio" --> This triggered below 2 events
+        # attribute.event.listener.on_record_write calling export_record
+        # prestashop.attribute.event.listener.on_record_write calling export_record
+        self.attribute.display_type = "radio"
         # check export delayed again
         self.assertEqual(2, self.instance_delay_record.export_record.call_count)
 

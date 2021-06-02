@@ -26,6 +26,7 @@ class TestExportProductImage(CatalogManagerTransactionCase):
             1,
             **{
                 "default_shop_id": self.shop.id,
+                "link_rewrite": "faded-short-sleaves-t-shirt",
             }
         )
 
@@ -68,13 +69,12 @@ class TestExportProductImage(CatalogManagerTransactionCase):
     def test_export_product_image_ondelete(self):
         # bind image
         self.binding.prestashop_id = 24
-        map_record = self.binding.get_map_record_vals()
 
         # delete image
         self.image.unlink()
         # check export delete delayed
         self.instance_delay_record.export_delete_record.assert_called_once_with(
-            "prestashop.product.image", self.backend_record, 24, map_record
+            self.backend_record, 24, {'id_product': 1}
         )
 
     @assert_no_job_delayed
@@ -127,12 +127,13 @@ class TestExportProductImage(CatalogManagerTransactionCase):
             )
 
             # delete image in PS
-            map_record = self.binding.get_map_record_vals()
+            attributes = {
+                'id_product': 1,
+            }
             self.env["prestashop.product.image"].export_delete_record(
-                "prestashop.product.image",
                 self.backend_record,
                 self.binding.prestashop_id,
-                map_record,
+                attributes,
             )
 
             # check DELETE requests
