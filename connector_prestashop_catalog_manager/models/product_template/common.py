@@ -1,10 +1,9 @@
 # © 2016 Sergio Teruel <sergio.teruel@tecnativa.com>
 # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 
-import odoo.addons.decimal_precision as dp
-
 from odoo import fields, models
 
+import odoo.addons.decimal_precision as dp
 from odoo.addons.component.core import Component
 from odoo.addons.component_event import skip_if
 
@@ -100,9 +99,9 @@ class ProductTemplateListener(Component):
 class TemplateAdapter(Component):
     _inherit = "prestashop.product.template.adapter"
 
-    def write(self, id, attributes=None):
+    def write(self, id_, attributes=None):
         # Prestashop wants all product data:
-        prestashop_data = self.client.get(self._prestashop_model, id)
+        prestashop_data = self.client.get(self._prestashop_model, id_)
 
         # Remove read-only fields:
         prestashop_data["product"].pop("manufacturer_name", False)
@@ -122,6 +121,6 @@ class TemplateAdapter(Component):
             for association, value in attributes["associations"].items():
                 fa_assoc[association] = value
 
-        res = super().write(id, full_attributes)
+        res = super().write(id_, full_attributes)
 
         return res

@@ -72,7 +72,7 @@ class CategImageAdapter(Component):
         )
         return api.add(image_url, files=[("image", img_filename, image_binary)])
 
-    def write(self, id, attributes=None):
+    def write(self, id_, attributes=None):
         # pylint: disable=method-required-super
         api = self.connect()
         image_binary = attributes["image"]

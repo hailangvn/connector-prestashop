@@ -70,27 +70,40 @@ class TestExportProductProduct(CatalogManagerTransactionCase):
             **{
                 "default_shop_id": self.shop.id,
                 "link_rewrite": "printed-dress",
-                "attribute_line_ids": [(0, 0, {
-                    'attribute_id': color_attribute.id,
-                    'value_ids': [(6, 0, [color_value.id])]
-                }), (0, 0, {
-                    'attribute_id': size_attribute.id,
-                    'value_ids': [(6, 0, [size_value.id])]
-                })],
+                "attribute_line_ids": [
+                    (
+                        0,
+                        0,
+                        {
+                            "attribute_id": color_attribute.id,
+                            "value_ids": [(6, 0, [color_value.id])],
+                        },
+                    ),
+                    (
+                        0,
+                        0,
+                        {
+                            "attribute_id": size_attribute.id,
+                            "value_ids": [(6, 0, [size_value.id])],
+                        },
+                    ),
+                ],
             }
         )
 
         # update product
         self.product = template.product_variant_ids[0]
-        self.product.write({
-            "barcode": "8411788010150",
-            "default_code": "demo_3_OS",
-            "default_on": False,
-            "impact_price": 20.0,
-            "product_tmpl_id": template.id,
-            "standard_price": 10.0,
-            "weight": 0.1,
-        })
+        self.product.write(
+            {
+                "barcode": "8411788010150",
+                "default_code": "demo_3_OS",
+                "default_on": False,
+                "impact_price": 20.0,
+                "product_tmpl_id": template.id,
+                "standard_price": 10.0,
+                "weight": 0.1,
+            }
+        )
 
     def _bind_product(self):
         return self.create_binding_no_export(
@@ -151,9 +164,7 @@ class TestExportProductProduct(CatalogManagerTransactionCase):
         # delete product
         self.product.unlink()
         # check export delete delayed
-        self.instance_delay_record.export_delete_record.assert_any_call(
-            backend_id, 46
-        )
+        self.instance_delay_record.export_delete_record.assert_any_call(backend_id, 46)
         self.instance_delay_record.export_delete_record.assert_called_with(
             backend_id, 3
         )
