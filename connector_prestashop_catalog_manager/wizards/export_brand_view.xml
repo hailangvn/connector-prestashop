@@ -28,7 +28,7 @@
     <record model="ir.actions.act_window" id="act_export_prestashop_product_brand">
         <field name="name">Export To PrestaShop</field>
         <field name="res_model">wiz.prestashop.export.product.brand</field>
-        <field name="binding_model_id" ref="product_brand.model_product_brand"/>
+        <field name="binding_model_id" ref="product_brand.model_product_brand" />
         <field name="binding_view_types">form</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>

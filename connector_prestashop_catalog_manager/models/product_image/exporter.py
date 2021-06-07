@@ -3,14 +3,13 @@
 import os
 import os.path
 
-from odoo.addons.connector_prestashop.components.backend_adapter import (
-    PrestaShopWebServiceImage,
-)
-
 from odoo.tools.translate import _
 
 from odoo.addons.component.core import Component
 from odoo.addons.connector.components.mapper import mapping
+from odoo.addons.connector_prestashop.components.backend_adapter import (
+    PrestaShopWebServiceImage,
+)
 
 
 class ProductImageExporter(Component):

@@ -29,7 +29,7 @@
         <record model="ir.actions.act_window" id="act_active_products">
             <field name="name">Active Products</field>
             <field name="res_model">active.deactive.products</field>
-            <field name="binding_model_id" ref="product.model_product_template"/>
+            <field name="binding_model_id" ref="product.model_product_template" />
             <field name="binding_view_types">form</field>
             <field name="view_mode">form</field>
             <field name="target">new</field>
@@ -62,7 +62,7 @@
         <record model="ir.actions.act_window" id="act_deactive_products">
             <field name="name">Deactive Products</field>
             <field name="res_model">active.deactive.products</field>
-            <field name="binding_model_id" ref="product.model_product_template"/>
+            <field name="binding_model_id" ref="product.model_product_template" />
             <field name="binding_view_types">form</field>
             <field name="view_mode">form</field>
             <field name="target">new</field>
