@@ -31,7 +31,7 @@ class PrestashopExportMapper(AbstractComponent):
             # We've got column so from_attr is already in self.model._fields
             if isinstance(res, (float, int)):
                 # force float precision:
-                digits = column['digits']
+                digits = column["digits"]
                 if digits and isinstance(digits[1], int):
                     # Any reason we need more than 12 decimals?
                     fmt = "{:." + str(max(digits[1], 12)) + "f}"

@@ -4,8 +4,6 @@
 import logging
 import mimetypes
 
-from odoo import _
-
 from odoo.addons.component.core import Component
 from odoo.addons.connector.components.mapper import mapping
 
@@ -80,12 +78,12 @@ class ProductImageImporter(Component):
             super().run(image_id, **kwargs)
         except PrestaShopWebServiceError:
             # TODO add activity to warn about he failure
-            if template:
+            if product_tmpl:
                 pass
-#                msg = _("Import of image id `%s` failed. " "Error: `%s`") % (
-#                    image_id,
-#                    error.msg,
-#                )
+        #                msg = _("Import of image id `%s` failed. " "Error: `%s`") % (
+        #                    image_id,
+        #                    error.msg,
+        #                )
         if str(product_tmpl.default_image_id) != str(image_id):
             return
         self.binder_for("prestashop.product.image")
