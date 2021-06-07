@@ -155,9 +155,9 @@ class TestImportProduct(PrestashopTransactionCase):
             )
             categs |= cat
         color_attr = self.env["product.attribute"].search([("name", "=", "Color")])
-        conflict_lines = self.env["product.template.attribute.line"].search([
-            ("attribute_id", "=", color_attr.id)
-        ])
+        conflict_lines = self.env["product.template.attribute.line"].search(
+            [("attribute_id", "=", color_attr.id)]
+        )
         if conflict_lines:
             conflict_lines.unlink()
 

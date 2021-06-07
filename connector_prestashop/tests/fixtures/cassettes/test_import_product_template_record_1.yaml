@@ -5114,17 +5114,28 @@ interactions:
       method: GET
       uri: http://www.prestashop_catalogmanager10.com/api/manufacturers/1
     response:
-      body: {string: !!python/unicode "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
-          xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n<manufacturer>\n\t<id><![CDATA[1]]></id>\n\t<active><![CDATA[1]]></active>\n\t<link_rewrite
-          notFilterable=\"true\"><![CDATA[fashion-manufacturer]]></link_rewrite>\n\t<name><![CDATA[Fashion
-          Manufacturer]]></name>\n\t<date_add><![CDATA[2019-01-10 13:28:05]]></date_add>\n\t<date_upd><![CDATA[2019-01-10
-          13:28:05]]></date_upd>\n\t<description><language id=\"1\" xlink:href=\"http://www.prestashop_catalogmanager10.com/api/languages/1\"><![CDATA[]]></language></description>\n\t<short_description><language
-          id=\"1\" xlink:href=\"http://www.prestashop_catalogmanager10.com/api/languages/1\"><![CDATA[]]></language></short_description>\n\t<meta_title><language
-          id=\"1\" xlink:href=\"http://www.prestashop_catalogmanager10.com/api/languages/1\"><![CDATA[]]></language></meta_title>\n\t<meta_description><language
-          id=\"1\" xlink:href=\"http://www.prestashop_catalogmanager10.com/api/languages/1\"><![CDATA[]]></language></meta_description>\n\t<meta_keywords><language
-          id=\"1\" xlink:href=\"http://www.prestashop_catalogmanager10.com/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n<associations>\n<addresses
-          nodeType=\"address\" api=\"addresses\">\n\t<address xlink:href=\"http://www.prestashop_catalogmanager10.com/api/addresses/3\">\n\t<id
-          xlink:href=\"http://www.prestashop_catalogmanager10.com/api/addresses/3\"><![CDATA[3]]></id>\n\t</address>\n</addresses>\n</associations>\n</manufacturer>\n</prestashop>\n"}
+      body:
+        {
+          string:
+            !!python/unicode "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<prestashop
+            xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n<manufacturer>\n\t<id><![CDATA[1]]></id>\n\t<active><![CDATA[1]]></active>\n\t<link_rewrite
+            notFilterable=\"true\"><![CDATA[fashion-manufacturer]]></link_rewrite>\n\t<name><![CDATA[Fashion
+            Manufacturer]]></name>\n\t<date_add><![CDATA[2019-01-10
+            13:28:05]]></date_add>\n\t<date_upd><![CDATA[2019-01-10
+            13:28:05]]></date_upd>\n\t<description><language id=\"1\"
+            xlink:href=\"http://www.prestashop_catalogmanager10.com/api/languages/1\"><![CDATA[]]></language></description>\n\t<short_description><language
+            id=\"1\"
+            xlink:href=\"http://www.prestashop_catalogmanager10.com/api/languages/1\"><![CDATA[]]></language></short_description>\n\t<meta_title><language
+            id=\"1\"
+            xlink:href=\"http://www.prestashop_catalogmanager10.com/api/languages/1\"><![CDATA[]]></language></meta_title>\n\t<meta_description><language
+            id=\"1\"
+            xlink:href=\"http://www.prestashop_catalogmanager10.com/api/languages/1\"><![CDATA[]]></language></meta_description>\n\t<meta_keywords><language
+            id=\"1\"
+            xlink:href=\"http://www.prestashop_catalogmanager10.com/api/languages/1\"><![CDATA[]]></language></meta_keywords>\n<associations>\n<addresses
+            nodeType=\"address\" api=\"addresses\">\n\t<address
+            xlink:href=\"http://www.prestashop_catalogmanager10.com/api/addresses/3\">\n\t<id
+            xlink:href=\"http://www.prestashop_catalogmanager10.com/api/addresses/3\"><![CDATA[3]]></id>\n\t</address>\n</addresses>\n</associations>\n</manufacturer>\n</prestashop>\n",
+        }
       headers:
         access-time: ["1581004289"]
         connection: [keep-alive]
@@ -5135,9 +5146,12 @@ interactions:
         execution-time: ["0.002"]
         psws-version: [1.6.1.22]
         server: [nginx/1.10.3 (Ubuntu)]
-        set-cookie: ["PrestaShop-6afe1be0fe41e536d378c33ccb8576a7=1d5a115267b80f649ea5301e1861e884aa12461ca9d8403ba8c68b9dca5f6481%3AERwbwgjnbPhegaRWNyAjEMbi94vkNpm3a3yQloG7owMcj%2Fg0g1asbjaZnjaHuJU9EwZGC%2FvsR47BLkqjDBYuEygli9M0CUBMXkXrGDl675Y%3D;
-            expires=Wed, 26-Feb-2020 15:51:29 GMT; Max-Age=1728000; path=/; domain=www.prestashop_catalogmanager10.com;
-            HttpOnly"]
+        set-cookie:
+          [
+            "PrestaShop-6afe1be0fe41e536d378c33ccb8576a7=1d5a115267b80f649ea5301e1861e884aa12461ca9d8403ba8c68b9dca5f6481%3AERwbwgjnbPhegaRWNyAjEMbi94vkNpm3a3yQloG7owMcj%2Fg0g1asbjaZnjaHuJU9EwZGC%2FvsR47BLkqjDBYuEygli9M0CUBMXkXrGDl675Y%3D;
+            expires=Wed, 26-Feb-2020 15:51:29 GMT; Max-Age=1728000; path=/;
+            domain=www.prestashop_catalogmanager10.com; HttpOnly",
+          ]
         transfer-encoding: [chunked]
         vary: [Accept-Encoding]
         x-powered-by: [PrestaShop Webservice]
