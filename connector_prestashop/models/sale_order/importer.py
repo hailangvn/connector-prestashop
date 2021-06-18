@@ -363,8 +363,17 @@ class SaleOrderImporter(Component):
 
     def _import_dependencies(self):
         record = self.prestashop_record
-        self._import_dependency(record["id_customer"], "prestashop.res.partner")
-        self._import_dependency(record["id_address_invoice"], "prestashop.address")
+        self._import_dependency(
+            record["id_customer"],
+            "prestashop.res.partner",
+            address_type="contact",
+        )
+        if record["id_address_invoice"] != record["id_address_delivery"]:
+            self._import_dependency(
+                record["id_address_invoice"],
+                "prestashop.address",
+                address_type="invoice",
+            )
         self._import_dependency(
             record["id_address_delivery"],
             "prestashop.address",
@@ -373,6 +382,7 @@ class SaleOrderImporter(Component):
             # it is not rare that the customer changes an existing address
             # at the same time he orders.
             always=True,
+            address_type="delivery",
         )
 
         if record["id_carrier"] != "0":

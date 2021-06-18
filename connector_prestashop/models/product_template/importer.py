@@ -352,7 +352,11 @@ class TemplateMapper(Component):
             record["id_tax_rules_group"],
             unwrap=True,
         )
-        return tax_group.tax_ids
+        tax_ids = tax_group.tax_ids
+        if tax_group:
+            ERROR = "Tax group `{}` should have one and only one tax, currently have {}"
+            assert len(tax_ids) == 1, _(ERROR).format(tax_group.name, len(tax_ids))
+        return tax_ids
 
     @mapping
     def taxes_id(self, record):

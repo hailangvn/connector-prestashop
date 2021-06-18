@@ -107,7 +107,7 @@ class ProductCategoryImporter(Component):
 #                            "name",
 #                        ],
 #                    )
-#                    name = values[self._default_language]["name"]
+#                    name = values[_default_language]["name"]
 
 
 class ProductCategoryBatchImporter(Component):

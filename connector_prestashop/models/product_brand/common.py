@@ -20,6 +20,7 @@ class PrestashopProductBrand(models.Model):
     _name = "prestashop.product.brand"
     _inherit = "prestashop.binding.odoo"
     _inherits = {"product.brand": "odoo_id"}
+    _description = "Prestashop Product Brand"
 
     odoo_id = fields.Many2one(
         comodel_name="product.brand",

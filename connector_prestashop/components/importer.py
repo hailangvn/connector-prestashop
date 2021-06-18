@@ -390,8 +390,6 @@ class TranslatableRecordImporter(AbstractComponent):
     _model_name = []
 
     _translatable_fields = {}
-    # TODO set default language on the backend
-    _default_language = "en_US"
     _mandatory_translation = True
 
     def __init__(self, environment):
@@ -496,10 +494,11 @@ class TranslatableRecordImporter(AbstractComponent):
         """
         # split prestashop data for every lang
         split_record = self._split_per_language(self.prestashop_record)
-        if self._default_language in split_record:
-            self.main_lang_data = split_record[self._default_language]
-            self.main_lang = self._default_language
-            del split_record[self._default_language]
+        _default_language = self.backend_record.default_language.code
+        if _default_language in split_record:
+            self.main_lang_data = split_record[_default_language]
+            self.main_lang = _default_language
+            del split_record[_default_language]
         else:
             self.main_lang, self.main_lang_data = split_record.popitem()
 

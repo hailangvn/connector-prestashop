@@ -39,6 +39,8 @@
     "category": "Connector",
     "demo": [],
     "data": [
+        "security/ir.model.access.csv",
+        "security/prestashop_security.xml",
         "data/queue_job_data.xml",
         "data/cron.xml",
         "data/product_decimal_precision.xml",
@@ -54,8 +56,7 @@
         "views/sale_view.xml",
         "views/account_view.xml",
         "views/stock_view.xml",
-        "security/ir.model.access.csv",
-        "security/prestashop_security.xml",
+        "views/queue_job_views.xml",
         "demo/backend.xml",
     ],
     "installable": True,
