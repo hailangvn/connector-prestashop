@@ -21,19 +21,28 @@ class RefundImporter(Component):
 
     def _open_refund(self, binding):
         invoice = binding.odoo_id
-        if invoice.amount_total == float(self.prestashop_record["amount"]):
-            invoice.action_invoice_open()
+        if invoice.amount_total == (
+            float(self.prestashop_record["amount"])
+            + float(self.prestashop_record["shipping_cost_amount"])
+        ):
+            invoice.action_post()
         # TODO else add activity to warn about differnt amount
-#        else:
-#            message=_(
-#                "The refund for order %s has a different amount "
-#                "in PrestaShop and in Odoo."
-#            )
-#            % invoice.origin,
+
+    #        else:
+    #            message=_(
+    #                "The refund for order %s has a different amount "
+    #                "in PrestaShop and in Odoo."
+    #            )
+    #            % invoice.origin,
 
     def _after_import(self, binding):
         super(RefundImporter, self)._after_import(binding)
         self._open_refund(binding)
+
+    def _has_to_skip(self, binding=False):
+        """ Return True if the import can be skipped """
+        if binding:
+            return True
 
 
 class RefundMapper(Component):
@@ -42,8 +51,8 @@ class RefundMapper(Component):
     _apply_on = "prestashop.refund"
 
     direct = [
-        ("id", "name"),
-        ("date_add", "date_invoice"),
+        ("id", "ref"),
+        ("date_add", "invoice_date"),
     ]
 
     @mapping
@@ -71,14 +80,17 @@ class RefundMapper(Component):
             binder = self.binder_for("prestashop.res.partner")
             partner = binder.to_internal(record["id_customer"], unwrap=True)
         return {
-            "origin": sale_order["name"],
+            "invoice_origin": sale_order["name"],
             "fiscal_position_id": fiscal_position,
             "partner_id": partner.id,
         }
 
-    @mapping
-    def comment(self, record):
-        return {"comment": _("PrestaShop amount: %s") % record["amount"]}
+    # TODO maybe add a mail_message after_import?
+    # but comment does not exist anymore and narration is not the good field for this
+    # as it appear on invoice PDF
+    #    @mapping
+    #    def comment(self, record):
+    #        return {"comment": _("PrestaShop amount: %s") % record["amount"]}
 
     @mapping
     @only_create
@@ -98,20 +110,23 @@ class RefundMapper(Component):
             lines.append((0, 0, shipping_line))
         for slip_detail in slip_details:
             line = self._invoice_line(slip_detail, fpos)
-            lines.append((0, 0, line))
+            if line:
+                lines.append((0, 0, line))
         return {"invoice_line_ids": lines}
 
     def _invoice_line_shipping(self, record, fpos):
         order_line = self._get_shipping_order_line(record)
         if not order_line:
             return None
-        if record["shipping_cost"] == "1":
-            price_unit = order_line["price_unit"]
+        if not record["shipping_cost"] == "1":
+            return None
+        if self.backend_record.taxes_included:
+            price_unit = record["total_shipping_tax_incl"]
         else:
-            price_unit = record["shipping_cost_amount"]
+            price_unit = record["total_shipping_tax_excl"]
         if price_unit in [0.0, "0.00"]:
             return None
-        product = self.env["product.product"].browse(order_line["product_id"][0])
+        product = order_line.product_id
         account = product.property_account_income_id
         if not account:
             account = product.categ_id.property_account_income_categ_id
@@ -120,10 +135,10 @@ class RefundMapper(Component):
         return {
             "quantity": 1,
             "product_id": product.id,
-            "name": order_line["name"],
-            "invoice_line_tax_ids": [(6, 0, order_line["tax_id"])],
+            "name": order_line.name,
+            "tax_ids": [(6, 0, order_line.tax_id.ids)],
             "price_unit": price_unit,
-            "discount": order_line["discount"],
+            "discount": order_line.discount,
             "account_id": account.id,
         }
 
@@ -132,15 +147,15 @@ class RefundMapper(Component):
         sale_order = binder.to_internal(record["id_order"], unwrap=True)
         if not sale_order.carrier_id:
             return None
-        sale_order_line_ids = self.env["sale.order.line"].search(
+        sale_order_lines = self.env["sale.order.line"].search(
             [
                 ("order_id", "=", sale_order.id),
                 ("is_delivery", "=", True),
             ]
         )
-        if not sale_order_line_ids:
+        if not sale_order_lines:
             return None
-        return sale_order_line_ids[0].read([])
+        return sale_order_lines[0]
 
     def _invoice_line(self, record, fpos):
         order_line = self._get_order_line(record["id_order_detail"])
@@ -184,7 +199,7 @@ class RefundMapper(Component):
             "quantity": quantity,
             "product_id": product_id,
             "name": name,
-            "invoice_line_tax_ids": [(6, 0, tax_ids)],
+            "tax_ids": [(6, 0, tax_ids)],
             "price_unit": price_unit,
             "discount": discount,
             "account_id": account.id,
@@ -202,17 +217,8 @@ class RefundMapper(Component):
         return order_line.with_context(company_id=self.backend_record.company_id.id)
 
     @mapping
-    def type(self, record):
-        return {"type": "out_refund"}
-
-    @mapping
-    def account_id(self, record):
-        binder = self.binder_for("prestashop.res.partner")
-        partner = binder.to_internal(record["id_customer"])
-        partner = partner.with_context(
-            company_id=self.backend_record.company_id.id,
-        )
-        return {"account_id": partner.property_account_receivable_id.id}
+    def move_type(self, record):
+        return {"move_type": "out_refund"}
 
     @mapping
     def company_id(self, record):

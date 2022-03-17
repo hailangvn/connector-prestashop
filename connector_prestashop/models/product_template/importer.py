@@ -12,6 +12,7 @@ from odoo.addons.connector.components.mapper import (
     mapping,
     only_create,
 )
+from odoo.addons.queue_job.exception import FailedJobError
 
 _logger = logging.getLogger(__name__)
 
@@ -566,9 +567,11 @@ class ProductTemplateImporter(Component):
             # TODO post msg / create activity
 
     def deactivate_default_product(self, binding):
+        # don't consider product as having variant if they are unactive.
+        # don't try to inactive a product if it is already inactive.
+        binding = binding.with_context(active_test=True)
         if binding.product_variant_count != 1:
-            # avoid unactiving already unactive variant
-            for product in binding.with_context(active_test=True).product_variant_ids:
+            for product in binding.product_variant_ids:
                 if not product.product_template_attribute_value_ids:
                     self.env["product.product"].browse(product.id).write(
                         {"active": False}
@@ -598,12 +601,17 @@ class ProductTemplateImporter(Component):
             if attr_id not in attribute_values:
                 attribute_values[attr_id] = []
             attribute_values[attr_id].append(value_id)
+
+        remaining_attr_lines = template.with_context(
+            active_test=False
+        ).attribute_line_ids
         for attr_id, value_ids in attribute_values.items():
-            attr_line = template.attribute_line_ids.filtered(
-                lambda l: l.attribute_id.id == attr_id
-            )
+            attr_line = template.with_context(
+                active_test=False
+            ).attribute_line_ids.filtered(lambda l: l.attribute_id.id == attr_id)
             if attr_line:
-                attr_line.write({"value_ids": [(6, 0, value_ids)]})
+                attr_line.write({"value_ids": [(6, 0, value_ids)], "active": True})
+                remaining_attr_lines -= attr_line
             else:
                 attr_line = self.env["product.template.attribute.line"].create(
                     {
@@ -612,6 +620,8 @@ class ProductTemplateImporter(Component):
                         "value_ids": [(6, 0, value_ids)],
                     }
                 )
+        if remaining_attr_lines:
+            remaining_attr_lines.unlink()
 
     def _import_combination(self, combination, **kwargs):
         """Import a combination
@@ -684,7 +694,10 @@ class ProductTemplateImporter(Component):
         for ps_supplierinfo in ps_supplierinfos:
             try:
                 ps_supplierinfo.resync()
-            except PrestaShopWebServiceError:
+            # PrestaShopWebServiceError is transformed in FailedJobError when
+            # supplierinfo can't fetch combination dependency. If combination has been
+            # removed, we want to clean the supplierinfo too)
+            except (PrestaShopWebServiceError, FailedJobError):
                 ps_supplierinfo.odoo_id.unlink()
 
     def _import_dependencies(self):
