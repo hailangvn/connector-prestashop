@@ -5,7 +5,7 @@ cache:
     - $HOME/.cache/pre-commit
 
 python:
-  - "3.6"
+  - "3.8" # prestapyt need at least python 3.8
 
 addons:
   postgresql: "9.6"
